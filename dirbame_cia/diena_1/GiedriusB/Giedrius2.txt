@@ -1,2 +1,4 @@
 testas;
 pabandysiu issaugot truputi teksto.
+
+/n ar veikia new line? :D
