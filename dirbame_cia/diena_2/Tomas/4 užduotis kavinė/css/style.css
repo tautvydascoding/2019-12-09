@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-style: oblique;
+}
+
+@media (max-width: 767px) {
+ div {
+   width: 100%;
+ }
+}
+
+
+h3 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+
+  margin-top: -2px;
+  margin-right: -2px;
+  width: 120px;
+  padding: 10px;
+  border: 2px solid black;
+
+}
+
+section {
+  display: inline-block;
+  margin: -4px;
+}
+
+p {
+  font-size: 80%;
+  text-align: center;
+  padding: 30px;
+  padding-top: 50px;
+
+}
+
+
+div {
+  position: relative;
+  text-align: center;
+  background-color: grey;
+  border: 2px solid black;
+  float: left;
+  width: 30.6%;
+  margin-left: 2%;
+
+  /* pasiziurėti dėl aukscio (reiktu isvis nedėti auskcio) */
+  height: 200px;
+}
+
+.pink {
+  background-color: #D59898;
+}
+
+.red {
+  background-color: #C14543;
+  color: white;
+}
+
+.yellow {
+  background-color: #E5D198;
+}
