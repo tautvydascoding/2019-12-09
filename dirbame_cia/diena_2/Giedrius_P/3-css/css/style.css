@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+
+.dezute{
+  width: 100px;
+  height: 100px;
+  border: solid 2px black;
+  display: inline-block;
+}
+
+body{font-size: 0px;}
+body h1{font-size: 50px;}
+
+.fonas-black{ background-color: black;}
+.fonas-green{background-color: green;}
+.fonas-red{background-color: red;}
+.fonas-brown{background-color: brown;}
