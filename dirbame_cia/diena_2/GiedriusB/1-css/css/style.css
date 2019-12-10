@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+.fonas-red {
+  background-color: red;
+}
+
+.fonas-pink {
+  background-color: pink;
+}
+
+.tekstas-italic {
+  font-style: italic;
+}
+
+h2 {
+  color: orange;
+}
+
+div h2 {
+  color: green;
+  background-color: yellow;
+}
+
+div h2.fonas-red {
+  background-color: green;
+}
