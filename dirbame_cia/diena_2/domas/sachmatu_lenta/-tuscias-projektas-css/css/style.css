@@ -1,0 +1,11 @@
+.fonas-melynas{
+    background-color: blue;
+}
+.kvadratas{
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+.fonas-raudonas{
+  background-color: red;
+}

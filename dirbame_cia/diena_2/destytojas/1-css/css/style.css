@@ -1,4 +1,36 @@
 h1 {
     color: red;
 }
- 
+div  h2 {    color: green; }
+h2 { color: orange; }
+h2 { color: brown; }
+div  h2 {
+    background-color: yellow;
+}
+
+div  h2.fonas-pink {
+    background-color: yellow;
+}
+h2.fonas-pink {
+    background-color: blue;
+}
+.fonas-red {
+    background-color: red;
+}
+.fonas-pink {
+    background-color: pink;
+}
+.tekstas-italic {
+    font-style: italic;
+}
+/*
+0) blogi
+02) class 4x
+1) ZEMIAU LAIMI;
+2) ELM VS  tevai
+3) class vs elm
+3.2) class + elm vs class
+4) id vs class
+5) style vs id
+6)
+*/
