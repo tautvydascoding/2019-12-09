@@ -56,7 +56,7 @@ SourceTree: terminala pakeisti i "vim" redaktoriu
 git config --global core.editor "vim"
 
 // John Doe - jusu username is www.GIThub.com puslapio
-git config --global user.name "tautvydascoding"
+git config --global user.name "d-o-m-a-s"
 git config --global user.name "tautvydascoding@gmail.com"
  
 
