@@ -4,9 +4,46 @@
         <meta charset="utf-8">
         <title></title>
     </head>
-    <body>
+<body>
+        <header>
+            <!-- meniu -->
+            <ul>
+                <li>
+                    <a href="index.html">   Home     </a>
+                </li>
+                <li>
+                    <a href="registracija.html">   Regirstracija     </a>
+                </li>
+                <li>
+                    <a href="galerija.html">   Galerija     </a>
+                </li>
+            </ul>
+        </header>
 
-        
+    <h1>  Vartotojo registracija  </h1>
 
-    </body>
+    <form action="http://www.google.com/search" method="get" autocomplete="on">
+        <input type="text" name="q"  placeholder="Google paieska">  <br>
+
+
+        <label for="vardas">Jusu Vardas</label>
+        <input type="text" name="vardas" value="" autofocus  autocomplete="name">  <br>
+
+        <label for="slaptazodis">Jusu slaptazodis</label>
+        <input type="password" name="slaptazodis" value="" required >  <br>
+
+        <label for="pastas">Jusu El.pastui</label>
+        <input type="email" name="pastas" value="" >  <br>
+
+        <label for="gimimo">Jusu gimimo data</label>
+        <input type="date" name="gimimo" value="" >  <br>
+
+        <label for="failai">Jusu foto</label>
+        <input type="file" name="failai" value="" >  <br>
+
+        <button type="submit" >  registruotis  </button> 
+    </form>
+
+
+</body>
 </html>
