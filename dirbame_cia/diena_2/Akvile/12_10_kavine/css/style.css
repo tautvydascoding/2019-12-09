@@ -1,0 +1,47 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  padding-left: 5px;
+}
+
+.small-box p{
+  margin:7px;
+  padding: 0px;
+}
+
+.grey-box {
+  background-color: grey;
+  width: 30.66%;
+  float: left;
+  margin-left: 2%;
+  position: relative;
+  padding-top: 35px;
+  border: 2px solid black;
+}
+
+.small-box {
+  width: 35%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  padding:1px;
+}
+
+.pink-box {
+  background-color: pink;
+}
+
+.red-box {
+  background-color: red;
+  color: white;
+}
+
+.yellow-box {
+  background-color: yellow;
+}
