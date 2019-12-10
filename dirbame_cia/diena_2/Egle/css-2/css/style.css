@@ -1,0 +1,34 @@
+h1 {
+    color: red;
+}
+
+
+
+.aukstis-200{
+height: 200px;
+}
+
+.fonas-pilkas{
+  background-color: rgb(161, 166, 157);
+}
+
+.plotis-50{
+  width: 50%;
+}
+
+.color-pink{
+  color: pink;
+}
+
+.color-orange{
+  color: orange;
+}
+
+.color-blue{
+  color:blue;
+}
+
+p{
+  text-align: center;
+  font-size: 15px;
+}

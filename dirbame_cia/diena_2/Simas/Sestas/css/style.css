@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+div {
+  float: left;
+  width: 40%;
+  height: 50vh;
+  border: 2px solid black;
+  margin: 0;
+  margin-left: 6.5%;
+  margin-bottom: 4%;
+}
+/* nuo 0 iki 768px iskaitant plansete */
+@media  (max-width: 768px) {
+  .antras {
+    display: none;
+  }
+  .ketvirtas {
+    width: 86.5%;
+  }
+}
+/* nuo 0 iki 520px iskaitant tel paverstus sonu */
+@media (max-width: 520px) {
+  div {
+    width: 86.5%;
+  }
+  .trecias {
+    display: none;
+  }
+  .antras {
+    display: block;
+    width: 86.5%;
+  }
+}
