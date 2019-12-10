@@ -1,0 +1,46 @@
+html,
+body {
+    /* istaiso keista klaida */
+    height: 100%;
+}
+/*
+* -visiems elementam isjungima
+remeliu skaiciavima
+(remeliai bus itraukti i ploti width)
+ */
+* { box-sizing: border-box; }
+
+/* -------------- */
+h1 {
+    color: red;
+}
+article {
+    /* vienoje eiluteje */
+    width: 30.6%;
+    float: left;
+    /* design */
+    border: solid 1px #010101;
+    background-color: #f2f2f2;
+    margin-left: 2%;
+    /* atitruakiam teksta nuo krastu */
+    padding: 50px 10px 20px 10px;
+
+    position: relative;
+}
+.isjungiu-float {
+    clear: both;
+}
+h2 {
+    /* antraste perkeliam i desine ir virsu */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* ant tevinio elemento uzdeti position relative */
+
+    margin-top: 0;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 1px #0f0f0f;
+    border-left: solid 1px #0f0f0f;
+}
