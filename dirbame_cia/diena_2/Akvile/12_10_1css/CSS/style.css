@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: orange;
+}
+
+div h2 {
+  color: green;
+}
+
+.fonas-red {
+  background-color: red;
+}
+.fonas-pink {
+  background-color: pink;
+}
+.tekstas-italic {
+  font-style: italic;
+}
+/*
+1) ZEMIAU LAIMI;
+2) ELM VS tevai
+3) class vs eml
+3.2) class + eml vs class
+4) id vs class
+5) style vs id
+ */
