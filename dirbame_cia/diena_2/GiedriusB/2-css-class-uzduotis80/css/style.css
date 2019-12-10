@@ -1,0 +1,22 @@
+.aukstis {
+  height: 200px;
+}
+.fonas-pilkas {
+  background-color: grey;
+}
+.plotis {
+  width: 50%;
+}
+.tekstas-red {
+  color: red;
+}
+.tekstas-yellow {
+  color: yellow;
+}
+.tekstas-green {
+  color: green;
+}
+p {
+  text-align: center;
+  font-size: 10px;
+}
