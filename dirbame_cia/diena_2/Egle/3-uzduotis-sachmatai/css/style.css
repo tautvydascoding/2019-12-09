@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+.black-chess{
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+
+ .grey-chess{
+  background-color: rgb(200, 208, 204);
+  width: 100px;
+  height: 100px;
+}

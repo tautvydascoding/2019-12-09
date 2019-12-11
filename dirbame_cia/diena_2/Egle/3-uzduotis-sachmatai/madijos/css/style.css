@@ -1,0 +1,46 @@
+html,
+body{
+  height: 100%
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+
+div{
+  display: inline-block;
+  width: 40%;
+  height: 40vh;
+  background-color: grey;
+  border: solid 2px black;
+  margin: 10px;
+  text-align: center;
+  margin-left: 6%;
+
+}
+
+/* nuo 0 iki 768 iskaitant plancetes */
+@media (max-width: 768px) {
+  .deze-2{ display: none; }
+  .deze-4{ width: 86%; }
+}
+
+/* nuo 0 iki 520 iskaitant landscape view telefone */
+@media (max-width: 520px ) {
+  .deze-3{ display: none;  }
+  .deze-2{
+    display: block;
+    width: 86%;
+   }
+  .deze-1{
+    width: 86%;
+  }
+    .deze-4{
+      width: 86%;
+    }
+   }
+}
