@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  float: right;
+  top: 0;
+  right: 0;
+  border: 2px solid black;
+  padding: 0px;
+  margin: -2px;
+  width: 30%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+article {
+  position: relative;
+  float: left;
+  border: 2px solid black;
+  width: 30%;
+  margin: 1.5%;
+  background-color: #999999;
+}
+
+div {
+  position: absolute;
+
+}
