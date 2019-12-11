@@ -6,40 +6,56 @@ body {
   box-sizing: border-box;
 }
 
+html {
+    background-color: #b3b5b4;
+}
+
+h1, h2, h3 {
+  font-family: 'Oleo Script', cursive;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+a, p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 h1 {
     color: white;
     text-align: center;
+    font-size: 49px;
 }
 
 h2 {
   text-align: center;
+  font-size: 38px;
 }
 
-ul {
+h3 {
+  font-size: 31px;
+}
+
+ nav ul {
   padding-left: 0px;
 }
+
 .container {
   width: 1200px;
-  height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  background-color: #b3b5b4;
-  padding-left: 7%;
-  padding-right: 7%;
-  padding-top: 20px;
 }
 
 header {
   background-color: #e472ba;
   height: 60px;
-  padding: 10px;
   margin-bottom: 10px;
+  padding-right: 15px;
 }
 
 nav {
   width: 60%;
   float: left;
+  margin-top: 8px;
 }
 
 nav li {
@@ -59,11 +75,22 @@ form {
   width: 40%;
   float: right;
   text-align: right;
+  margin-top: 15px;
+}
+
+input {
+  height: 30px;
 }
 
 button {
   background-color: black;
+  border: 0px;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 1px;
 }
+
 
 section {
   float: left;
@@ -87,13 +114,17 @@ aside {
   right: 0;
   top: 0;
   bottom: 0;
-  padding-left: 2%;
+}
+
+aside li {
+  margin-bottom: 10px;
 }
 
 footer {
   float: left;
   background-color: white;
-  height: 30px;
+  height: 50px;
   width: 100%;
   margin-top: 10px;
+  padding-left: 2%;
 }
