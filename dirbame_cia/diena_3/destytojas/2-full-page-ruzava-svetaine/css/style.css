@@ -29,7 +29,7 @@ nav {
     float: left;
     width: 70%;
 }
-li {
+nav  li {
     /* vienoje eilute */
     /* turime TIK 100%  reik ploti kazokki uzdeti */
     float: left;
@@ -47,7 +47,7 @@ a {
 a:hover{
     color: red;
 }
-ul {
+nav ul {
     padding-left: 0;
 }
 /* ------end menu--------- */
@@ -72,4 +72,21 @@ header  button {
     color: white;
     padding: 9px 29px;
     border: none;
+}
+main {
+    width: 80%;
+    float: left;
+    background-color: white;
+}
+aside {
+    width: 20%;
+    float: left;
+    background-color: pink;
+    /* automatinis aside aukstis */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    /* ant tecio uzdeti overflow: hidden */
+}
+.wrapper {
+    overflow: hidden;
 }
