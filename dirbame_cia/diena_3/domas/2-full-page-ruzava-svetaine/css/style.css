@@ -17,7 +17,7 @@ html {
 }
 
 h1 {
-    color: #cc99ff;
+    color: red;
     text-align: center;
 }
 header {
@@ -27,7 +27,7 @@ header {
 /* ---menu----- */
 nav {
     float: left;
-    width: 70%;
+    width: 70%; 
 }
 li {
     /* vienoje eilute */
