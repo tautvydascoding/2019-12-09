@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 300px;
+}
+
+.container div {
+  height: 100px;
+}
+
+.top {
+  display: flex;
+}
+
+.karsta {
+  background-color: blue;
+  flex-grow: 1;
+  border: 2px solid red;
+
+}
+
+.sninga {
+  background-color: red;
+  flex-grow: 1;
+  border: 2px solid green;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.lyja {
+  background-color: green;
+  flex-grow: 1;
+  border: 2px solid yellow;
+}
+
+.lorem {
+  width: 100%;
+  background-color: yellow;
+  border: 2px solid blue;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.ziema {
+  background-color: aqua;
+  flex-grow: 1;
+  border: 2px solid deeppink;
+  order: 2;
+  margin-left: 2%;
+}
+
+.vasara {
+  background-color: deeppink;
+  flex-grow: 1;
+  border: 2px solid blue;
+}
