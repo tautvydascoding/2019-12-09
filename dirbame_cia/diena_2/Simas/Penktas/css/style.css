@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+h2 {
+  color: red;
+}
+ul li {
+  color: blue;
+}
+li.pirmas {
+  color: green;
+}
+section.grupe ul li {
+  color: red;
+}

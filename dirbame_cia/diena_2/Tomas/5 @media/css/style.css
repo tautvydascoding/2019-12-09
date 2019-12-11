@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+  width: 40%;
+  height: 45vh;
+  border: 1px solid red;
+  float: left;
+  margin-left: 6%;
+}
+
+@media (max-width: 768px) {
+  .deze-2 { display: none; }
+  .deze-4 { width: 86%; }
+
+}
+
+@media (max-width: 520px) {
+  .deze-3 {display: none}
+  .deze-1 {width: 86%;}
+  .deze-2 {
+    display: block;
+    width: 86%;
+  }
+
+}
