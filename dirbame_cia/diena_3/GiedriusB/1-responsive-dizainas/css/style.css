@@ -1,0 +1,41 @@
+html,
+body{
+  height: 100%;
+}
+*{box-sizing: border-box;}
+.isjungiu-float {
+  clear: both;
+}
+.tevas {
+  background-color: grey;
+  width: 30%;
+  float: left;
+  border: solid 1px black;
+  margin-left: 2.5%;
+  padding: 40px 10px 10px 15px;
+  position: relative;
+}
+.vaikas {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-bottom: solid 1px black;
+  border-left: solid 1px black;
+  margin-top: 0px;
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+}
+.box-pink {
+  background-color: pink;
+}
+.box-red {
+  background-color: red;
+  color: white;
+}
+.box-yellow {
+  background-color: yellow;
+}
+h1 {
+  text-align: center;
+}
