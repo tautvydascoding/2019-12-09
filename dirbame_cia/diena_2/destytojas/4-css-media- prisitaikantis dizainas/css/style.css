@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+/* -------- */
+h1 {
+    color: red;
+}
+div {
+   width: 40%;
+   height: 45vh;
+   border: solid 1px red;
+   float: left;
+   margin-left: 6%;
+}
+/* nuo 0 iki 768 iskaitant plancete */
+@media (max-width: 768px) {
+    .deze-2 {   display: none;    }
+    .deze-4 {   width: 86%;    }
+}
+/* nuo 0 iki 520 iskaitant tel. paverstus sonu */
+@media (max-width: 520px) {
+    .deze-3 {   display: none;    }
+    .deze-1 {   width: 86%;    }
+    .deze-2{
+        display: block;
+        width: 86%;
+        }
+}
+
+
+
+/*  */

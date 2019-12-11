@@ -1,0 +1,51 @@
+
+/* Ivykdyti uzduotis is .pdf failo
+
+5 - pasitreniruoti CSS selectorius
+6 - sukurti kaviniai puslapi
+
+reikalavimai:
+plocius nurodyti procentais %,
+patiekalu antrastes pozicionouti naudojant “position: absolute”
+i viena eilute 3 blokus sudeti naudojant : “float: left” komanda
+sukurti vienodus tarpus tarp 3-ju bloku */
+html,
+  body{
+    /* background-color: coral; */
+    height: 100%;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+h1{text-align: center;}
+
+.dezute{
+  position: relative;
+  background-color: grey;
+  width: 30.6%;
+  height: auto;
+  border: solid 2px black;
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 3%;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.boarder{
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  border-left: solid 2px black;
+  border-bottom:solid 2px black;
+  top: 0px;
+  right: 0px;
+  margin: 0%;
+
+}
+
+.fonas-pink{background-color: pink;}
+.fonas-red{background-color: red;}
+.fonas-yellow{background-color: yellow;}

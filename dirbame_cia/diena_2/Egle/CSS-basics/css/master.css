@@ -1,0 +1,37 @@
+html{
+  background-color: rgb(237, 237, 238)
+}
+
+h1{
+  color: red;
+}
+
+h2{
+  color: orange;
+}
+
+div h2{
+  color: green;
+}
+
+div h2.fonas-pink{
+  color: yellow;
+}
+
+.fonas-raudonas {
+  background-color: red;
+}
+
+.tekstas-italic{
+  font-style: italic;
+}
+
+.fonas-pink{
+  background-color: pink;
+}
+
+/*
+class 4x
+
+
+ */

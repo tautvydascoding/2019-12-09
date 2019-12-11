@@ -1,0 +1,14 @@
+h1 {
+    color: red;
+}
+div {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.juodas {
+  background-color: black;
+}
+.raudonas {
+  background-color: red;
+}

@@ -1,0 +1,22 @@
+.plotis-50 {
+  width: 50%;
+}
+.fonas-pilkas {
+  background-color: grey;
+}
+.aukstis-200 {
+  height: 200px;
+}
+.spalva-raudona {
+  color: red;
+}
+.spalva-geltona {
+  color: yellow;
+}
+.spalva-melyna {
+  color: blue;
+}
+article {
+  text-align: center;
+  font-size: 10px;
+}
