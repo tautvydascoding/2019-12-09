@@ -16,47 +16,44 @@ html {
     margin-right: auto;
 }
 
-a{
-  color:black;
-  text-decoration: none;
-}
-
-header{
-height: 90px;
-  background-color: pink;
-}
-
-}
-nav {
-float: left;
-width:70%;
-background-color: green;
-padding:10%;
-
-}
-ul{
-text-align: center;
-  list-style: none;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding-top: 10px;
-
-
-
-}
-
-li{
-  margin-bottom: 10px;
-width: 25%;
-  float:left;
-}
-
-
 h1 {
-    color: lightblue;
+    color: #cc99ff;
     text-align: center;
 }
-input{
-  border: none;
+header {
+    background-color: pink;
+    height: 90px;
+}
+/* ---menu----- */
+nav {
+    float: left;
+    width: 70%;
+}
+li {
+    /* vienoje eilute */
+    /* turime TIK 100%  reik ploti kazokki uzdeti */
+    float: left;
+    width: 25%;
+    /* 3) nepamirsti isjungti */
+    list-style: none;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ul {
+    padding-left: 0;
+}
+/* ------end menu--------- */
+.paieska {
+    float: left;
+    width: 30%;
+    background-color: orange;
+}
+.isjungiu-float{
+    clear: both;
+    content: "";
 }
