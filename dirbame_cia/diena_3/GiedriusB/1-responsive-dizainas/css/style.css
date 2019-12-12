@@ -7,6 +7,7 @@ body{
   clear: both;
 }
 .tevas {
+  margin: 10px;
   background-color: grey;
   width: 30%;
   float: left;
@@ -38,4 +39,18 @@ body{
 }
 h1 {
   text-align: center;
+}
+/*Responsive design plancetem*/
+@media (max-width: 768px) {
+  .tevas {width: 45%;
+  }
+  .elementas-3 {
+    width: 94%;
+  }
+}
+/*Responsive design telefonam*/
+@media (max-width: 320px) {
+  .tevas {width: 95%;
+  }
+
 }
