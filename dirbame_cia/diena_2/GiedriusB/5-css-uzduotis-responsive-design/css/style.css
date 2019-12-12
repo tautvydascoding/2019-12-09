@@ -1,0 +1,56 @@
+.deze-1 {
+  border: solid 1px black;
+}
+
+.deze-2 {
+  border: solid 1px black;
+}
+
+.deze-3 {
+  border: solid 1px black;
+}
+
+.deze-4 {
+  border: solid 1px black;
+}
+
+div {
+  float: left;
+  width: 40vh;
+  margin: 20px;
+  margin-bottom: 10px;
+  height: 40vh;
+  font-size: 12vh;
+  text-align: center;
+
+}
+.off-float {
+  clear: both;
+}
+
+/*Nuo 0 iki 768 iskaitant ir plancete*/
+@media (max-width: 768px) {
+  .deze-2 {
+    display: none;
+  }
+
+  .deze-4 {
+    width: 86%;
+  }
+}
+
+/*Nuo 0 iki 520 iskaitant tel paverstus sonu*/
+@media (max-width: 520px) {
+  .deze-1 {
+    width: 86%;
+  }
+
+  .deze-3 {
+    display: none;
+  }
+
+  .deze-2 {
+    width: 86%;
+    display: block;
+  }
+}
