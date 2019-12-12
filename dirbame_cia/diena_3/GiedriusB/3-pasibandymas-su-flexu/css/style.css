@@ -1,0 +1,53 @@
+.tevas-flex {
+  display: flex;
+  /* justify-content: space-between; */
+
+}
+.pirma-eile {
+  flex-grow: 1;
+
+}
+.karsta {
+  background-color: lightblue;
+  border: solid 2px purple;
+  padding: 45px;
+  margin: 50px 5px 5px 50px;;
+  flex-grow: 1;
+}
+.sninga {
+  background-color: purple;
+  border: solid 2px blue;
+  padding: 45px;
+  margin: 50px 5px 5px 5px;;
+  flex-grow: 1;
+}
+.lyja {
+  background-color: green;
+  border: solid 2px yellow;
+  padding: 45px;
+  margin: 50px 50px 5px 5px;;
+  flex-grow: 1;
+}
+.lorem {
+  text-align: center;
+  background-color: yellow;
+  border: solid 2px blue;
+  padding: 45px;
+  margin: 5px 50px 5px 50px;
+
+}
+.vasara {
+  background-color: purple;
+  border: solid 2px blue;
+  padding: 45px;
+  margin: 5px 5px 50px 50px;
+  flex-grow: 1;
+
+}
+.ziema {
+  background-color: blue;
+  border: solid 2px purple;
+  flex-grow: 1;
+  padding: 45px;
+  margin: 5px 50px 50px 5px;
+}
