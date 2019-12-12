@@ -1,0 +1,145 @@
+html,
+  body{
+    height: 100%;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  html{
+    background-color: #A9A9A9;
+  }
+
+.container {
+  width: 1200px;
+  background-color: #A9A9A9;
+  display: block;
+  /* elemento centravimas */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baltas{
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+  color: white;
+  text-shadow: 3px 3px black;
+  font-size:  50px;
+  background-color: #A9A9A9;
+  margin: 0%;
+  padding: 3%;
+}
+
+nav li{
+  float: left;
+  padding: 25px 8% 25px 8%;
+  list-style: none;
+}
+
+nav a{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.click:active{
+  position:relative;
+  top:1px;
+}
+
+.click:hover{
+  color: #484848;
+}
+
+nav form{
+  text-align: center;
+  padding: 21px 8% 24px 8%;
+}
+
+nav input{
+  padding: 2% 2%;
+  border: none;
+  border-radius: 20px;
+}
+
+.myButton {
+	background-color:#000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Courier New;
+	padding:2% 9% ;
+
+  border: none;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.dezute70{
+  width: 70%;
+  height: 70px;
+  background-color: #FF80FF;
+  float: left;
+  margin: 0%;
+}
+
+.dezute30{
+  width: 30%;
+  height: 70px;
+  background-color: #FF80FF;
+  float: left;
+  margin: 0%;
+}
+
+.isjungti-float{ clear: both;}
+
+.juodas{
+   text-align: center;
+  font-family: 'Lilita One', cursive;
+  color: black;
+  font-size:  50px;
+  margin: 0%;
+  padding: 1%;
+  }
+
+.mazas-sriftas{
+  font-size: 30px;
+  text-align: left;
+}
+
+.dezute80{
+  width: 78%;
+  margin: 1% 1% 0 0;
+  padding: 1%;
+  padding-bottom: 9999px;
+  margin-bottom:-9999px;
+  float: left;
+  background-color: white;
+}
+.dezute20{
+  width: 21%;
+  margin: 1% 0 0 0;
+  padding: 2%;
+  padding-bottom: 9999px;
+  margin-bottom:-9999px;
+  float: left;
+  background-color: #FF80FF;
+  padding-inline-start: 0;
+}
+
+.wrapper{ overflow: hidden;}
+
+.dezute100{
+  width: 100%;
+  height: 70px;
+  background-color:white;
+  margin: 1% 0 2% 0;
+  padding: 15px 0 0 1% ;
+}
+
+p{font-family: 'Open Sans', sans-serif;
+text-indent: 5%;}

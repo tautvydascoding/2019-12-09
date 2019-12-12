@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+}
+li {
+  border: 3px solid black;
+  margin: 10px;
+  width: 100px;
+  list-style-type: none;
+}
+.menu ul {
+  display: flex;
+  justify-content: flex-start;
+}

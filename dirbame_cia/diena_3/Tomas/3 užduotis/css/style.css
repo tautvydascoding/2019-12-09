@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  background-color: grey;
+  width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.plotis-30 {
+  float: left;
+  width: 30%;
+  height: 210px;
+  border: 3px solid black;
+  margin: 1.5%;
+}
+
+.plotis-100 {
+  float: left;
+  width: 96%;
+  height: 210px;
+  border: 3px solid black;
+  margin: 1.5%;
+}
+
+.plotis-45 {
+  float: left;
+  width: 46.5%;
+  height: 210px;
+  border: 3px solid black;
+  margin: 1.5%;
+}
+
+.fonas-blue {
+  background-color: #03FFFF;
+}
+
+.fonas-pink {
+  background-color: #FF03FF;
+}
+
+.fonas-green {
+  background-color: #669933;
+
+}
+
+.fonas-yellow {
+  background-color: #FFFF03;
+}
+
+.border1 {
+  border: 3px solid #FF03FF;
+}
+
+.border2 {
+  border: 3px solid #6703FF;
+}
+
+.border3 {
+  border: 3px solid #FFFF03;
+}
+
+.border4 {
+  border: 3px solid #6703FF;
+}
+
+.border5 {
+  border: 3px solid #6703FF;
+}
+
+.border6 {
+  border: 3px solid #FF03FF;
+}
