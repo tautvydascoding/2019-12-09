@@ -1,0 +1,11 @@
+header, footer, nav, article, aside {
+  background-color: yellow;
+}
+
+header, footer {
+  height: 50px;
+}
+
+nav, article, aside {
+  height: 400px;
+}
