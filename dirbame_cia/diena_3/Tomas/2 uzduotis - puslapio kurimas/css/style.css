@@ -1,0 +1,175 @@
+body {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2 {
+  font-family: 'Lilita One', cursive;
+}
+
+.container {
+  width: 1200px;
+}
+
+header {
+  width: 100%;
+  background-color: #FF80FF;
+  header: 90px;
+}
+
+html {
+  background-color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.h1-pirmas {text-align: center; color: white;
+  text-shadow: 4px 4px black;
+
+}
+
+/* navigacija */
+
+strong {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+nav {
+  float: left;
+  width: 70%;
+  background-color: #FF80FF;
+}
+
+
+
+
+nav .pirmas li {
+  display: inline;
+  padding: 60px;
+  text-decoration: none;
+}
+
+.be-brūkšnio {
+  text-decoration: none;
+}
+
+/* ---------- */
+
+/* formos */
+
+.search {
+  float: left;
+  width: 28%;
+  background-color: #FF80FF;
+  padding-top: 15px;
+  padding-left: 80px;
+  border: none;
+}
+
+input {
+  border: none;
+  height: 20px;
+  border-radius: 25px;
+
+}
+
+button {
+  border: none;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.mygtukasgo {
+  color: white;
+  margin: 1px;
+}
+
+/* nuimti nuo formu borderius  */
+
+form {
+  border: none
+}
+
+
+.isjungiu-float {
+  clear: both;
+  background-color: #FF80FF;
+}
+
+/* turinys */
+
+section {
+  margin: 10px 0px;
+}
+
+.tekstai-turinyje {
+  padding: 20px;
+}
+
+.centre {
+  font-size: 2em;
+  text-align: center;
+}
+
+section article div {
+  background-color: white;
+  width: 80%;
+  float: left;
+  height: 500px;
+}
+
+aside {
+  background-color: #FF80FF;
+  float: right;
+  height: 500px;
+  top: 0;
+  right: 0;
+  width: 19%;
+}
+
+aside h1 {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 16px;
+  margin-bottom: 10px;
+}
+
+li .galas {
+  width: 15px;
+
+}
+
+aside ul {
+  margin-left: 23px;
+}
+
+aside ul li {
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+#listas {
+  margin-top: 0;
+}
+
+
+
+/* footeris */
+
+footer {
+  background-color: white;
+  float: 0;
+  width: 100%;
+}
+
+footer p {
+  padding: 20px;
+  margin-top: 10px;
+}

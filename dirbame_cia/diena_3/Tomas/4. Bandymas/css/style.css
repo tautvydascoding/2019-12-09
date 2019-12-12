@@ -1,0 +1,108 @@
+body {
+width: 1100px;
+margin-left: auto;
+margin-right: auto;
+background-color: grey;
+}
+
+#h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Lilita One', cursive;
+  text-shadow: 5px 5px black;
+}
+
+.h1 {
+  text-align: center;
+  font-family: 'Lilita One', cursive;
+  font-size: 2em;
+
+}
+
+h2 {
+  font-family: 'Lilita One', cursive;
+}
+
+/* NAVIGACIJA */
+.pirmas-listas li {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  color: black;
+}
+
+.pirmas-listas li a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+nav ul {
+  padding-top: 11px;
+  color: black;
+}
+
+nav {
+  float: left;
+  width: 75%;
+  background-color: pink;
+  height: 70px;
+}
+/* ---------- */
+
+/* FORMA */
+.forma {
+  float: left;
+  width: 25%;
+  background-color: pink;
+  height: 70px;
+}
+
+form {
+  padding-top: 22px;
+}
+
+/* TURINYS */
+
+.turinys {
+  background-color: white;
+  float: left;
+  width: 74%;
+  height: 450px;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+/* ---------- */
+
+/* ASIDE */
+
+.aside {
+  float: left;
+  width: 25%;
+  background-color: pink;
+  height: 450px;
+  margin-top: 1%;
+}
+
+.antras-listas li {
+  padding: 10px 0px;
+}
+
+.isjungti-float {
+  clear: both;
+}
+
+/* ------- */
+
+/* footeris  */
+
+footer {
+  float: left;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+}

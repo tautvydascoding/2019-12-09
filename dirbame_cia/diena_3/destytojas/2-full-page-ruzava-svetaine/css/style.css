@@ -10,7 +10,6 @@ html {
 }
 .container {
     width: 1200px;
-    background-color: white;
     /* elem. centravimas */
     margin-left: auto;
     margin-right: auto;
@@ -20,9 +19,16 @@ h1 {
     color: red;
     text-align: center;
 }
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', 'Arial', cursive;
+}
 header {
     background-color: pink;
     height: 90px;
+    margin-bottom: 2%;
 }
 /* ---menu----- */
 nav {
@@ -74,9 +80,11 @@ header  button {
     border: none;
 }
 main {
-    width: 80%;
+    width: 78%;
     float: left;
     background-color: white;
+    margin-right: 2%;
+    padding: 20px 15px;
 }
 aside {
     width: 20%;
