@@ -17,7 +17,7 @@ html {
 }
 
 h1 {
-    color: #cc99ff;
+    color: red;
     text-align: center;
 }
 header {
@@ -29,7 +29,7 @@ nav {
     float: left;
     width: 70%;
 }
-li {
+nav  li {
     /* vienoje eilute */
     /* turime TIK 100%  reik ploti kazokki uzdeti */
     float: left;
@@ -44,16 +44,49 @@ a {
     color: black;
     text-decoration: none;
 }
-ul {
+a:hover{
+    color: red;
+}
+nav ul {
     padding-left: 0;
 }
 /* ------end menu--------- */
 .paieska {
     float: left;
     width: 30%;
-    background-color: orange;
+    padding-top: 29px;
 }
 .isjungiu-float{
     clear: both;
     content: "";
+}
+input {
+    border: none;
+    height: 38px;
+    padding-left: 20px;
+    border-radius: 15px;
+    color: red;
+}
+header  button {
+    background-color: black;
+    color: white;
+    padding: 9px 29px;
+    border: none;
+}
+main {
+    width: 80%;
+    float: left;
+    background-color: white;
+}
+aside {
+    width: 20%;
+    float: left;
+    background-color: pink;
+    /* automatinis aside aukstis */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    /* ant tecio uzdeti overflow: hidden */
+}
+.wrapper {
+    overflow: hidden;
 }
