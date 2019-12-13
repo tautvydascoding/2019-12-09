@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+header, footer, nav, article, aside {
+  background-color: green;
+}
+header, footer {
+  height: 100px;
+}
+nav {
+  height: 400px;
+
+}
+article {
+  height: 294px;
+
+}
+aside {
+  height: 90px;
+}

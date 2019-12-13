@@ -1,0 +1,15 @@
+header, footer, nav, article, aside {
+  background-color: green;
+}
+
+header, footer, aside {
+  height: 50px;
+}
+
+nav {
+  height: 400px;
+}
+
+article {
+  height: 350px;
+}

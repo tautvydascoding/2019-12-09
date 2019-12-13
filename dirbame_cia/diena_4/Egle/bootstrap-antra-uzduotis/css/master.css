@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+}
+
+
+
+.aukstis-header{
+  height: 50px;
+}
+
+.main{
+height: 300px;
+}
+
+.aukstis-footer{
+  height: 70px;
+}
+
+p{
+  margin-block-end: 0;
+}

@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+}
+
+nav {
+  background-color: aqua;
+  height: 660px;
+}
+
+article {
+  height: 500px;
+}
+
+header, footer {
+  background-color: green;
+  height: 80px;
+}
