@@ -1,0 +1,184 @@
+html,
+body{
+  height: 100%;
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* -------  */
+html{
+  background-color: #f2f2f2;
+}
+
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    color: rgb(70, 58, 65);
+    text-shadow: 2px 2px #666060;
+    margin: 30px;
+
+}
+/* -------headear/navigation-------- */
+header{
+
+  background-color: rgb(150, 126, 148);
+  margin: 10px;
+
+}
+
+/* .menu-bar{
+  width: 70%;
+  border: solid red 2px;
+} */
+
+/* .search{
+  width: 30%;
+  border: solid blue 3px;
+  position: absolute;
+  top: 25%;
+  right: 0;
+} */
+nav{
+  float: left;
+  width: 70%;
+}
+.search{
+  float: left;
+  width: 30%;
+  padding-top: 18px;
+}
+
+.menu-list{
+  text-align:justify;
+}
+
+.navigation{
+ display: inline-block;
+ margin-left: 13%;
+ font-family: 'Bebas Neue', cursive;
+ font-size: 25px;
+ }
+
+
+nav ul{
+  padding-left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(164, 13, 57);
+}
+a:hover{
+  color: rgb(204, 222, 106);
+}
+
+input{
+  border: none;
+  height: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  color:red;
+}
+
+button{
+  background-color: rgb(54, 45, 96);
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  width: 30%;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+button:hover{
+  color: rgb(62, 166, 159);
+}
+
+/* ---------- wrapper------------ */
+
+.wrapper{
+  width: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+main{
+
+  float: left;
+  width: 75%;
+  background-color: rgb(204, 213, 210);
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+aside{
+  float: left;
+  width: 20%;
+  background-color: rgb(138, 146, 186);
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+
+}
+
+.aside-headline{
+  font-family: 'Cherry Bomb', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.aside-list{
+  width: 75%;
+  margin-top: 10%;
+  text-align: center;
+  /* display: block;  */
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  /* text-indent: 80px; */
+
+
+}
+
+.first-article{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+article{
+  margin: 2%;
+}
+
+.article-font{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+/* ------ Footer ----- */
+
+.copy-right{
+  width: 98%;
+  height: 70px;
+  background-color: rgb(150, 126, 148);
+  margin-left: 1%;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 20px;
+  color: rgb(42, 23, 43);
+}
+
+
+
+
+.clear-fix{
+  clear: both;
+}

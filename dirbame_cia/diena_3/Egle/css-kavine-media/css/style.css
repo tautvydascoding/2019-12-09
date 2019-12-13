@@ -15,9 +15,8 @@ h1 {
   text-align: center;
   font-family: monospace;
   font-size: 30px;
-  color: rgb(62, 36, 48)
-
-
+  color: rgb(62, 36, 48);
+  background-image: url();
 }
 
 
@@ -72,7 +71,15 @@ p{
 
 
 
+
+
+
 /* nuo 0 iki siauri telefonai :  */
+@media (max-width: 768px) {
+  .menu-section{width: 47%;}
+  .tab-length{width: 96%;}
+}
+
 @media (max-width: 520px) {
-  .menu-section{ width: 86%;}
+  .menu-section{ width: 96%;}
 }
