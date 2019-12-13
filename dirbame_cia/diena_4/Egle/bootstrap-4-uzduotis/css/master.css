@@ -1,0 +1,15 @@
+.elementu-aukstis{
+  height: 50px;
+}
+
+.main-aukstis{
+  height: 300px;
+}
+
+.article-height{
+  height: 250px;
+}
+
+p{
+  margin-block-end: 0;
+}

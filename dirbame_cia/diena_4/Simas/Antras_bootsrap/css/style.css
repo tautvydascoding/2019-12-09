@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+header, footer {
+  height: 20vh;
+}
+article, nav, aside {
+  height: 60vh;
+}

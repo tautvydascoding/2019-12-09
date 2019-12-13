@@ -1,0 +1,77 @@
+h1 {
+    color: rgb(75, 66, 198);
+    margin-left: 70px;
+}
+
+body{
+  width: 340px;
+  height: 300px;
+
+}
+
+
+.melynas-fonas{
+  background-color: rgb(113, 179, 198);
+  border: solid 2px rgb(226, 63, 158);
+  text-align: center;
+  padding-top: 35px;
+}
+
+.raudonas-fonas{
+  background-color: rgb(204, 18, 18);
+  border: solid 2px rgb(61, 80, 170);
+  text-align: center;
+  padding-top: 35px;
+}
+
+.geltonas-fonas{
+  background-color: rgb(236, 244, 58);
+  border: solid 2px rgb(26, 50, 219);
+  text-align: center;
+  padding-top: 35px;
+}
+
+.zalias-fonas{
+  background-color: rgb(54, 143, 65);
+  border: solid 2px rgb(184, 208, 32);
+  text-align: center;
+  padding-top: 35px;
+}
+
+.container-1{
+  display:flex;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+.plotis-30{
+flex-grow: 1;
+margin-left: 10px;
+}
+
+.container-2{
+  display: flex;
+  height: 100px;
+
+}
+
+.plotis-100{
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-grow: 1;
+
+}
+
+.container-3{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.plotis-45{
+  margin-left: 10px;
+  margin-top: 10px;
+  flex-grow: 1;
+
+
+}
