@@ -1,0 +1,26 @@
+html,
+body{
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+h1 {
+    color: red;
+}
+
+
+.aukstis{
+  height: 500px;
+}
+
+.aukstis-elementu{
+  height: 100px;
+}
+
+.article{
+height: 300px;
+}

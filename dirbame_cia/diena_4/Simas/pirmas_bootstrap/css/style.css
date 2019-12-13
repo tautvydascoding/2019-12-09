@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+header, footer {
+  height: 100px;
+}
+article {
+  height: 300px;
+}

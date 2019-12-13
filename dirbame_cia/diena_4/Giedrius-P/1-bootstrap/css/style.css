@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+}
+body {
+    /* display: flex; */
+}
+
+.fonas{background-color: green;}
+.fonas-red{background-color: red;}
+
+.aukstis{height: 300px;}
+.margin{margin: 2%;}
