@@ -1,0 +1,15 @@
+.h-header, .h-footer {
+  height: 100px;
+}
+
+.h-0 {
+  height: 700px;
+}
+
+.h-1 {
+  height: 350px;
+}
+
+.h-2 {
+  height: 100px;
+}
