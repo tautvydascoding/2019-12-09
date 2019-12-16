@@ -1,0 +1,138 @@
+html,
+  body{
+    height: 100%;
+    background-color: grey;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  .bg-red{ background: red;}
+  .bg-blue{ background: blue;}
+  .bg-green{ background: green;}
+  .bg-yellow{ background: yellow;}
+  .bg-pink{background-color: #FF80FF;}
+  .bg-white{background-color: white;}
+
+.container{
+  width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+h1, h2, h3{font-family: 'Girassol', cursive;}
+
+nav{
+  height: 70px;
+  margin: 2%, 0;
+}
+
+nav li{
+
+  list-style: none;
+}
+.g-flex{
+  justify-content: center;
+  align-items: center;
+}
+
+nav a{
+  flex-grow: 1;
+  color: black;
+  text-decoration: none;
+}
+
+form{
+  padding: 25px 8% 25px 15%;
+}
+
+input{
+  border: none;
+  padding: 2% 1%;
+  border-radius: 6px;
+}
+
+.textcenter{text-align: center;}
+.googlefont{}
+.line-height{line-height: 30px;}
+
+.myButton {
+	background-color:black;
+	border-radius:6px;
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+a:active {
+	position:relative;
+	top:1px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-r{
+  flex-direction: row-reverse;
+}
+
+.f-70{
+  width: 70%;
+  flex-grow: 1;
+  margin: 0%;
+}
+
+.f-29{
+  width: 29%;
+  flex-grow: 1;
+
+  margin: 0%;
+  padding-bottom: 9999px;
+  margin-bottom:-9999px;
+}
+
+.f-30{
+  width: 30%;
+  flex-grow: 1
+  margin: 0%;
+  padding-bottom: 9999px;
+  margin-bottom:-9999px;
+}
+
+footer{
+  width: 100%;
+  height: 70px;
+  padding-top: 11px;
+  padding-left: 2%;
+}
+
+.mt{margin-top: 1%}
+.mr{margin-right: 1%}
+.ml{margin-left: 1%}
+.mb{margin-bottom: 1%}
+.pl{padding-left: 2%}
+
+.float-off{ clear:both;}
+
+.wrapper{ overflow: hidden;}
