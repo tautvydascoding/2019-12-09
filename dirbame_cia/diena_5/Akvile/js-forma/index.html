@@ -14,13 +14,23 @@
     </head>
     <body>
         <div class="container  bg-light">
-            <h1>Javascript pamoka</h1>
-            <div class="card">
+            <h2>Apskritimo plotas</h2>
+            <div class="card col-6 pb-5">
               <label for="spindulys">Įvestike apskritimo spindulio ilgį: </label>
-              <input type="text" name="spindulys" value="8">
-              <button type="button" name="button" onclick="plotas()">Skaiciuoti plota</button>
+              <input type="text" name="spindulys" value="">
+              <button type="button" name="button" onclick="plotas()">Skaičiuoti plotą</button>
+              <h2 id="apskritimas"></h2>
             </div>
-            <h2></h2>
+
+            <h2>Stačiakampio plotas</h2>
+            <div class="card col-6 pb-5">
+              <label for="plotis">Įvestike stačiakampio plotį: </label>
+              <input type="text" name="plotis" value="">
+              <label for="ilgis">Įvestike stačiakampio ilgį: </label>
+              <input type="text" name="ilgis" value="">
+              <button type="button" name="button" onclick="staciakampioPlotas()">Skaičiuoti plotą</button>
+              <h2 id="staciakampis"></h2>
+            </div>
         </div>
 
         <!-- MANO JS pats zemiausias -->
