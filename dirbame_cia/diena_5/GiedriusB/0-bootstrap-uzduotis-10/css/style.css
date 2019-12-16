@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 392px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+.plotis50 {
+  width: 50vw;
+}
+.aside-auto {
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+}
+.over {
+  overflow: hidden;
+}
