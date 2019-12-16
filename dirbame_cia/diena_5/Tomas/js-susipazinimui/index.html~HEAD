@@ -13,23 +13,21 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
+      <div class="container  bg-light">
+          <h1>Mokaus CSS</h1>
 
-<<<<<<< HEAD
-        </div>
+      </div>
+
+
+
+
+        <!-- MANO JS pats zemiausias -->
+<<<<<<< HEAD:dirbame_cia/-tuscias-projektas-css/index.html
+        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
 =======
-        </div><!-- IDEA: END container -->
-         
->>>>>>> 74ba7700a43c5e421ecf14749f5625567e779624
-
-
-
-
         <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>
         <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
-        <!-- MANO JS pats zemiausias -->
         <script type="text/javascript" src="js/main.js"></script>
-
-     </body>
+>>>>>>> 5b8ba5aaada7653d8fdf987149bcd788d2819c9b:dirbame_cia/diena_5/Tomas/js-susipazinimui/index.html
+    </body>
 </html>

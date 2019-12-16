@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+header {
+  height: 100px;
+}
+nav, aside {
+  height: 200px;
+}
+article {
+  height: 300px;
+}
+footer {
+  height: 100px;
+}
