@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+
+        <!-- MANO CSS visada pats zemiausias!!! -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="container  bg-light">
+          <h1>Mokaus CSS</h1>
+
+      </div>
+
+
+
+
+        <!-- MANO JS pats zemiausias -->
+<<<<<<< HEAD:dirbame_cia/-tuscias-projektas-css/index.html
+        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+=======
+        <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>
+        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+        <script type="text/javascript" src="js/main.js"></script>
+>>>>>>> 5b8ba5aaada7653d8fdf987149bcd788d2819c9b:dirbame_cia/diena_5/Tomas/js-susipazinimui/index.html
+    </body>
+</html>
