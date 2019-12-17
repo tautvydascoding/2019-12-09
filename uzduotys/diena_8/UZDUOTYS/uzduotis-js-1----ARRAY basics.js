@@ -2,7 +2,7 @@
 
 // -------- --Array / Masyvai  TEORIJA (~2h)--------------------
 
-
+ 
 	// UZDUOTIS
 	// 1.1 sukurti tuscia masyva "prekiautojai"
 	// 1.2 uzpildyti masyva prekiaujanciomis imonemis pvz: senukai, ...
