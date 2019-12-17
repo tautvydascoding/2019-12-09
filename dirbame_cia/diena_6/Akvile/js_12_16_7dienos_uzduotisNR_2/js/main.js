@@ -113,7 +113,7 @@ function spausdintiLentele(x, z) {
 	}
 }
 
-spausdintiLentele(5, 3);
+spausdintiLentele(15, 3);
 
 
 // ----------------------------
@@ -129,7 +129,7 @@ spausdintiLentele(5, 3);
 // advance
 // 5 UZDUOTIS
 // sukurti f-ja, kuri apskaiciuos kiek uzdirbsime po 10 metu , jei pradzioje uzdirbdami 680, ir kai alga i menesi pakyla 1% (~6.8eur)
-var kiekMenesiu = 10 * 12;
+var kiekMenesiu = 20 * 12;
 var menAtlyginimas = 680;
 var algosPokytis = 1;  // 1%
 
