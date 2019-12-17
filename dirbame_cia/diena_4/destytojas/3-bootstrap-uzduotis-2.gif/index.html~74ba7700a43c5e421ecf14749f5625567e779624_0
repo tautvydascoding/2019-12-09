@@ -14,22 +14,17 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
+            <h1 class="bg-info">Mokaus CSS</h1>
 
-<<<<<<< HEAD
+
+
+
         </div>
-=======
-        </div><!-- IDEA: END container -->
-         
->>>>>>> 74ba7700a43c5e421ecf14749f5625567e779624
 
 
 
 
-        <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>
-        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
         <!-- MANO JS pats zemiausias -->
-        <script type="text/javascript" src="js/main.js"></script>
-
-     </body>
+        <script type="text/javascript" scr="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
+    </body>
 </html>
