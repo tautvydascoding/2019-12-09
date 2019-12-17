@@ -5,17 +5,22 @@
 // =============================
 
 
-
 //==============TEKSTO ISVEDIMAS (tik susipazinti)=========
 // UZDUOTIS
 // Issimeginti komandas:
 
-// document.write(" <b class='bg-info'> Mano tekstas </b> ");
+document.write(" <b class='bg-info'> Mano tekstas </b> ");
 // window.alert("labas");
 // alert("Viso");
+
+// slaptažodzio iššokimas ir slaptažodžio atvaizdavimas į konsolę
 // var ivestasTekstas = prompt("Ivestkite savo varda");
 // console.log(ivestasTekstas);
-// document.querySelector('h1').innerHTML = " <b>Antraste</b>";
+
+let manoMeniu = "<nav> <li> Home </li> <li> About </li> </nav>"
+document.querySelector('body').innerHTML += manoMeniu;
+document.querySelector('h1').innerHTML += " <b>Antraste</b>";
+
 
 //----Elemento duomenys--------
 // auksto paemimas:
@@ -31,18 +36,47 @@
 //  kuri atspausdina i konsole "x" reiksme
 //  iskviesti f-ja print(15.99);
 
+// function printKaina(x) {
+//   console.log("kaina:x);
+// }
+// printKaina(15.99);
+//
+// document.querySelector('body').innerHTML += "Kaina:" + x + "<br>";
+
 //  1.2 UZDUOTIS
 // iskviesti f-ja print 3 kartus, kad atspausdintu 3 skirtingas kainas:  999 , 13.49, 100.05
 //    vietoj x irasant, koki nors teksta pvz: printKaina( 999);
+
+// printKaina(999);
+// printKaina(13.49);
+// printKaina(100.05);
 
 // 2.1 UZDUOTIS
 // parasyti f-ja "pazymiuVidurkis()", kuri apskaiciuoja vidurki is  5 menesiu pazymiu
 // suskaiciuoti pazymiu vidurki (pazymius sukurti f-jos viduje) 5, 10 , 8 , 6 , 8  (ir atspausdintu vidurki)
 
+function pazymiuVidurkis() {
+  let vidurkis = (5 + 10 + 8 + 6 + 8) / 5;
+  console.log("vidurkis" + vidurkis);
+}
+pazymiuVidurkis();
+
+
 // 2.2 UZDUOTIS
 // parasyti f-ja "pazymiuVidurkis1(x1, x2, x3, x4, x5)", kuriai galima paduoti 5 kintamuosius,
 // kuri apskaiciuoja vidurki is paduotu 5 menesiu pazymiu
 // suskaiciuoti pazymiu vidurki, 5, 10 , 8 , 6 , 8  (ir atspausdintu vidurki)
+
+function pazymiuVidurkis1(x1, x2, x3, x4, x5) {
+  let vidurkis = (x1 + x2 + x3 + x4 + x5) / 5;
+  console.log("vidurkis geresne funkcija" + vidurkis);
+}
+pazymiuVidurkis1(5, 10, 8, 6, 8);
+pazymiuVidurkis1(5, 7, 10, 4, 8);
+pazymiuVidurkis1(3, 10, 7, 6, 8);
+
+
+
 
 
 //=====================RETURN==================
@@ -52,10 +86,24 @@
 // B)   f-joje  sukurti kintamaji "vardas" Tomas
 // C) patikrinti ar veikia f-ja
 
+function getVardas() {
+  let vardas = "Tomas";
+  return vardas;
+}
+document.querySelector('body').innerHTML += getVardas();
+
+
 // 2 UZDUOTIS
 // parasyti f-ja "getVardasPavarde()", kuri turi "return" zodeli ir grazina varda ir pavarde i iskveitimo vieta.
 //  f-joje sukurti kintamaji   "pavarde" Tomauskas, "vardas" - Antanas
 // patikrinti ar veikia f-ja
+
+function getVardasPavarde() {
+    let vardas = "Tomas";
+    let pavarde = "Antanas";
+    return vardas + pavarde;
+}
+document.querySelector('body').innerHTML += "<br>" + getVardasPavarde();
 
 // 3 UZDUOTIS
 // A) parasyti f-ja "getPelnas()", kuri turi "return" zodeli ir grazina apskaiciuota pelna
@@ -64,16 +112,39 @@
 // B) f-joje apskaiciuoti pelna  ( pvz: pelnas = pajamos - islaidos)
 // C) patikrinti ar veikia f-ja
 
+function getPelnas() {
+let pajamos = 12500;
+let islaidos = 7500;
+let pelnas = pajamos - islaidos;
+  return pelnas;
+}
+
+document.querySelector('body').innerHTML += "<br>" + getPelnas();
+
+
 // 3.2 UZDUOTIS
 // A) parasyti f-ja "getPelnas(pajamos, nuostoliai)", kuri turi "return" zodeli ir grazina apskaiciuota pelna
 // B) f-joje apskaiciuoti pelna  ( pvz: pelnas = pajamos - nuostoliai)
 // C) patikrinti ar veikia f-ja
+
+function getPelnas1(pajamos, nuostoliai) {
+ pelnas = pajamos - nuostoliai;
+ return pelnas;
+
+}
+document.querySelector('body').innerHTML += "<br>" + getPelnas1(12500, 2500);
 
 
 // 4.1 UZDUOTIS
 // parasyti f-ja, kuri skaiciuoja vieno mokinio pazymiu vidurki
 // "getPazymiuVidurkis2(x1, x2, x3, x4, x5)"  f-ja apskaiciuoja vidurki is paduotu 5 menesiu pazymiu (ir grazina atsakyma i iskvietimo vieta! "return atskymas;")
 //  turi "return" zodeli.
+
+function getPazymiuVidurkis2(x1, x2, x3, x4, x5) {
+  atsakymas = (x1 + x2 + x3 + x4 + x5) / 5;
+  return atsakymas;
+}
+document.querySelector('body').innerHTML += "<br>" + getPazymiuVidurkis2(7, 6, 4, 10, 8);
 
 // 4.2 UZDUOTIS
 // parasyti f-ja, kuri skaiciuoja 6-kiu mokiniu pazymiu vidurki
@@ -83,10 +154,21 @@
 // turi "return" zodeli.
 
 
+
 // 5 UZDUOTIS
 // A) sukurti h1 su tekstu viduje  (HTML faile)
 // B) sukurti f-ja "getH1ElementoAukstis(), kuri su "return" grazina surenderinto h1 elemento auksti
 // C) su CSS pakeisti h1 auksti, ir paziureti ar jusu f-ja veikia
+
+document.querySelector('body').innerHTML += "<br><br><h1>Tekstas</h>";
+
+function getH1ElementoAukstis() {
+var aukstis = document.querySelector('h1').clientHeight;
+return aukstis;
+}
+document.querySelector('body').innerHTML += getH1ElementoAukstis();
+
+
 
 // =================FOR intro  ======================
 
@@ -98,6 +180,13 @@
 // ####
 // #####
 // ######
+let tekstas = "";
+for(i = 0; i < 6; i++) {
+  tekstas += "#";
+  console.log(tekstas);
+}
+
+
 
 //=========== =KOMANDINE (3-4h) Bootstrap && GIT=================
 // ant lentos
