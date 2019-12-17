@@ -62,3 +62,11 @@ function apskritimoPlotas() {
   Plotas = Math.PI * ivedimoLaukasSpindulys.value * ivedimoLaukasSpindulys.value;
   document.querySelector("p").innerHTML = "Apskritimo plotas " + Plotas;
 }
+
+
+let itemas = "";
+let i = 0;
+for ( i = 0; i < 6; i++) {
+  itemas += "#";
+  console.log(itemas);
+}
