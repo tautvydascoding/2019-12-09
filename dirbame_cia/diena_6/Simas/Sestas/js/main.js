@@ -12,4 +12,22 @@ function print() {
 function printX(xx) {
   document.write(xx);
 }
-printX();
+// 2.2 UZDUOTIS
+// paleisti f-ja "printX(xx)" 100 kartu
+
+
+
+// let i = 0;
+// for ( i = 0; i < 100; i++) {
+//   printX("kazkas <br>");
+// }
+
+
+
+// 2.3 UZDUOTIS
+// paleisti f-ja "printX(xx)" 12 kartu ir atspausdinti <img ...
+// PATARIMAS:
+// pabandyti  isideti nuotrauka i HTML faila, jie pavyks tada nusikopijuoti ir ideti i js faila
+for ( i = 0; i < 12; i++) {
+  printX('<img id="image" src="images/balionas.png" alt="balionas">');
+}
