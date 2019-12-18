@@ -9,3 +9,11 @@
 
 // UZDUOTIS 1.2
 // iskviesti pasisveikinimo f-ja, ir jai padduoti atsisveikino f-ja
+
+function sveikinuosi(){
+
+}
+
+function atsisveikinu(){
+  
+}
