@@ -1,0 +1,37 @@
+.plotis-50 {width: 50%;
+}
+
+
+.fonas-pilkas {background: grey;
+}
+
+
+.aukstis-200 { height: 200 px; text-align: center; font-size: 5;
+}
+
+h2.spalva1 {
+  color: red;
+}
+h2.spalva2 {
+  color: green;
+}
+h2.spalva3 {
+  color: blue;
+}
+
+section.Tetis
+{
+  font-size: 0px;
+}
+
+
+div.juoda-deze {
+  height: 100px; width: 100px;
+  background: black; display: inline-block; border-style: solid;
+}
+div.balta-deze {
+  height: 100px; width: 100px;
+  background: white; display: inline-block; border-style: solid;
+}
+
+/* --------------------------------------- */

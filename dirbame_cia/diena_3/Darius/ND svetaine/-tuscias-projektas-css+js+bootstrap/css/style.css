@@ -1,0 +1,133 @@
+html
+body
+{
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html
+{
+  background-color: #f2f2f2;
+}
+
+.container
+
+{
+  width: 1200px;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ header
+ {
+   background-color: pink;
+   height: 80px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+ }
+
+ nav
+{
+  width: 60%;
+  float: left;
+}
+
+nav li
+{
+  width: 20%;
+  float: left;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  padding-top: 10px;
+  height: 40px;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
+a:hover
+{
+  color: green;
+}
+
+nav ul
+{
+  padding-left: 5px;
+}
+.paieska
+{
+  width: 35%;
+  float: left;
+  border: none;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.off-float
+{
+  clear: both;
+}
+
+input
+
+{
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+
+main
+{
+  width: 80%;
+  float: left;
+  background-color: orange;
+  color: blue;
+  padding: 10px 10px;
+}
+
+h1, h2, h3
+{
+  color: black;
+  }
+ header button {
+   background-color: red;
+   color: black;
+   padding: 6px 6px;
+ }
+
+ aside
+ {
+   width: auto;
+   background-color: tan;
+   float: left;
+   padding-left: 5%;
+   margin-left: 1%;
+   width: 19%;
+
+   padding-bottom: 9999px;
+   margin-bottom: -9999px;
+ }
+
+ .wrapper {
+   overflow: hidden;
+ }
+
+ li
+ {font-size: 20px;
+   padding-top: 8px;
+
+   height: 80px;
+
+ }
+
+
+ .name
+ {
+   text-align: center;
+ }

@@ -1,0 +1,73 @@
+html
+body{
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+article
+
+{
+  width: 30%;
+  height: 300px;
+ float: left;
+ background: grey;
+ border: solid 1 px #010101;
+ margin-left: 1%;
+ margin-bottom: 10%;
+ position: relative;
+ padding: 50px 10px 30px 10px;
+ }
+
+.isjungti-float {clear:both;
+}
+
+h3
+{
+  position: absolute;
+  top: 0; right: 30%; left: 30%;
+  margin-top: 0;
+  width: 40%;
+  text-align:center;
+  border-bottom: solid 1px #0f0f0f;
+  border-right: solid 1px #0f0f0f;
+  border-left: solid 1px #0f0f0f;
+
+}
+
+.fonas-red {
+  background: red;
+}
+.fonas-blue {
+  background: blue;
+}
+.fonas-green {
+  background: green;
+}
+.fonas-brown {
+  background: brown;
+}
+.fonas-pink {
+  background: pink;
+}
+.fonas-tan {
+  background: tan;
+}
+
+
+@media (max-width: 768px) {
+.pirmas {
+  display: none;
+}
+}
+
+@media (max-width: 768px) {
+.trecias {
+  display: none;
+}
+.ketvirtas {
+  width: 50%;
+}
+}
