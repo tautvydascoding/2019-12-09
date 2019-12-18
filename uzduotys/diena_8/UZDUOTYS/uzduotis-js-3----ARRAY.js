@@ -19,6 +19,7 @@ console.log(names);
 keliautojas = ["Tomas", "Pietkus", 25, "VDU - inzinerija"];
 var x = keliautojas.length;
 document.querySelector('p')innerHTML =  x;
+
 // 1. i masyvo gala ideti elmenta "butelis vandens"
 // 2. i masyvo pradzia ideti elmenta "ziebtuvelis"
 // 3. istrinti 3-cia elmenta
