@@ -101,7 +101,8 @@ if (klietoVardas == vardas1) {
 } else {
 	console.log("5% nuolaida kelionems");
 
-}
+}  
+
 // kai "if"-ui padauodame klietoVardas ir vardas2 - isvesti "Buitinei technikai  30% nuolaida"
 // kai "if"-ui padauodame bet ka kita - isvesti "5% nuolaida kelionems"
 
