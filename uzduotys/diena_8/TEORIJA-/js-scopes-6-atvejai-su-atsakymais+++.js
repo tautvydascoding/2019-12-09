@@ -4,7 +4,7 @@ var x = 10;
 function test1() {
     console.log(x);
 }
-test1(); // 10
+test1(); //  10
 
 // Ka atspausdina console?
 var x = 10;
