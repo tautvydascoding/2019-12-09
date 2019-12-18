@@ -33,3 +33,10 @@ function getImonesPelnas(pajamos, kastai) {
   return pelnas;
 }
 console.log("pelnas: " + getImonesPelnas(imonesPajamos, imonesIslaidos) );
+
+
+function addNumbers(a, b) {
+  let c = a + b;
+ document.write(c);
+}
+addNumbers(5, 4);
