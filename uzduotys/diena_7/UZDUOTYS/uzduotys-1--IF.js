@@ -96,8 +96,20 @@ if (arVedes = true){
 // 2 UZDUOTIS
 // susikurti kintamaji 'klietoVardas' - (ja ivesime betkokia) kurio reiksme lyginsime
 // sukurti 3  vardas1= "Tomas", vardas2 ="Paulius", vardas3 ="Airidas" (gimianiciu vardai , jie tures akcijas))
-
+let klietoVardas = "Jurate";
+vardas1= "Tomas";
+vardas2 ="Paulius";
+vardas3 ="Airidas";
 // kai "if"-ui padauodame klietoVardas ir vardas1 - isvesti "Masinoms 10% nuolaida"
+if (klietoVardas == vardas1) {
+	console.log("Masinoms 10% nuolaida");
+} else if (klietoVardas == vardas2) {
+	console.log("Buitinei technikai  30% nuolaida");
+} else {
+	console.log("5% nuolaida kelionems");
+
+}  
+
 // kai "if"-ui padauodame klietoVardas ir vardas2 - isvesti "Buitinei technikai  30% nuolaida"
 // kai "if"-ui padauodame bet ka kita - isvesti "5% nuolaida kelionems"
 
