@@ -39,17 +39,19 @@ if(true){
 // patikrinti ar zmogus vedes. Jeigu "vedes" - duoti paskola, jeigu "nevedes" - neduoti paskolos
 // su console.log pranesti ar paskola zmogui bus duodama
 
-let arVedes = 'true';
+let arVedes = 'false';
 let arDuotiPaskola = 'false';
 
 if (arVedes == 'true'){
+	arDuotiPaskola = true;
   console.log("paskola duoti");
   document.querySelector('body').innerHTML += "paskola duoti";
 } else {
+	arDuotiPaskola = falce;
   console.log("paskolos neduoti");
   document.querySelector('body').innerHTML += "paskolos neduoti";
 }
-
+console.log("Ar gausite paskola: " + arDuotiPaskola);
 
 
 // 0 UZDUOTIS

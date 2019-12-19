@@ -1,0 +1,59 @@
+html
+body
+{
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+.fonas-blue
+{
+  background: blue;
+}
+.plotis-30 ul
+{
+  width: 30%;
+  float: left;
+  border: solid 1px #010101;
+  margin-left: 1%;
+  height: 100px;
+
+}
+.plotis-100
+{
+  width: 98%;
+  float: left;
+  border: solid 1px #010101;
+  margin-left: 1%;
+  height: 100px;
+}
+.plotis-45 ul
+{
+  width: 45%;
+  float: left;
+  border: solid 1px #010101;
+  margin-left: 1%;
+  height: 100px;
+}
+
+
+.float-none
+{
+  clear:both;
+}
+
+.fonas-blue
+{
+  background-color: blue;
+}
+
+.fonas-green
+{
+  background-color: green;
+}
+
+.fonas-pink
+{
+  background-color: pink;
+}
