@@ -88,7 +88,7 @@ function test1(x) {
      x = 555;
 }
 test1(888);
-
+console.log( x );
 
 // Ka atspausdina console?
 
