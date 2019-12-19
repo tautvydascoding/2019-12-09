@@ -84,7 +84,7 @@ test1(888);
 // Ka atspausdina console?
 var x = 999;
 function test1(x) {
-     console.log(x);
+    console.log(x);
      x = 555;
 }
 test1(888);

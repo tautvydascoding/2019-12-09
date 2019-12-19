@@ -131,7 +131,7 @@ for (var i = 1; i < 100; i++) {
 
 for (var i = 1; i < 12; i++) {
 
-printX("<img src = 2.gif>");
+printX("<img src = 2.gif>"+"</br>");
 
 
 }
@@ -140,7 +140,52 @@ printX("<img src = 2.gif>");
 // A) sukurti f-jas piestiEilute(x); spausdintiStulpeli(x);
 // B) nupiesti tuscia lentele paleidiznat f-jas (  antrastine eilute "vardas |  pavarde | amzius" - teks isvesti be f-jos)
 
+for (var i = 0; i < 80; i++) {
 
+
+document.querySelector("body").innerHTML += "-";
+
+
+
+}
+
+for (var i = 0; i < 1; i++) {
+
+  document.querySelector("body").innerHTML += "</br><pre>     vardas       |       pavarde        |        amzius         </pre></br>"
+
+}
+
+for (var i = 0; i < 80; i++) {
+
+
+document.querySelector("body").innerHTML += "-" ;
+}
+
+
+
+
+
+
+
+
+for (var i = 0; i < 30; i++){
+
+document.querySelector("body").innerHTML += "</br>"+"|"+"</br>";
+
+
+}
+
+for (var i = 0; i < 25; i++) {
+
+document.querySelector("body").innerHTML += "|" + "<pre>                             </pre>"+"|"+"</br>";
+
+
+}
+
+
+for (var i = 0; i < 30; i++) {
+document.querySelector("body").innerHTML +=  "|";
+}
 
 
 // ----------------------------
