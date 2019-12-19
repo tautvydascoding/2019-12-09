@@ -82,3 +82,5 @@ function lyginiai(){
 lyginiai();
 // 5 UZDUOTIS:
 //surasti blogiausia darbuotoja
+
+//console.log(masyvas.sort());
