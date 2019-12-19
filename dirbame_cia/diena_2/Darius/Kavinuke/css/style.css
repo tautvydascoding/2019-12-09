@@ -1,0 +1,54 @@
+
+html,
+body {
+  height: 100%;
+}
+
+
+/* visiem elementam ijungiam remeliu skaiciavima */
+*{
+  box-sizing: border-box;
+}
+article
+{
+  width: 32%;
+  float: left;
+  background: grey;
+  border: solid 1px #010101;
+  margin-left: 2%;
+  position: relative;
+  /* atitraukima teksta */
+  padding: 50px 10px 20px 10px;
+
+}
+
+.isjungti-float {
+  clear: both;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  /* perkelsime elementa i desnes virsu */
+  position: absolute;
+  top: 0; right: 0;
+  margin-top: 0;
+  width: 150px;
+  text-align: center;
+  border-bottom: solid 1px #0f0f0f;
+  border-left: solid 1px #0f0f0f;
+
+    /* ant tevinio elemento uzdeti position relevent */
+}
+.fonas-red {
+  background-color: red;
+}
+.fonas-geltonas {
+  background-color: yellow;
+}
+/* nuo 0 iki Tabletu */
+@media (max-width: 767px) {
+
+}

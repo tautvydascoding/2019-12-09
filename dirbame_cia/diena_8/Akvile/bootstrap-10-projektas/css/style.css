@@ -1,0 +1,13 @@
+nav, article, aside, footer {
+    background-color: rgb(255,234,221)
+}
+
+header, footer {
+    height: 100px;
+}
+
+
+article, aside {
+    height: 500px;
+}
+
