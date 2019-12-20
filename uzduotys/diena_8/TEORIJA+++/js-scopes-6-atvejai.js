@@ -103,6 +103,7 @@ fucntion test1(x) {
 test1(333);
 console.log(x);
 
+
 var x = 999;
 function test1(x) {
      console.log(x);
