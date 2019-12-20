@@ -2,9 +2,9 @@
 // if ( true ) {
 //     console.log("labas");
 // }
-if(true){
-	console.log("labas")
-}
+// if(true){
+// 	console.log("labas")
+// }
 
 // if (salyga) {
 //     // jei true
@@ -38,6 +38,13 @@ if(true){
 // sukurti kintamuosius: arVedes ir arDuotiPaskola = false
 // patikrinti ar zmogus vedes. Jeigu "vedes" - duoti paskola, jeigu "nevedes" - neduoti paskolos
 // su console.log pranesti ar paskola zmogui bus duodama
+let arVedes = true;
+let arDuotiPaskola = false;
+
+if (arVedes = true){
+  console.log(paskola bus duodama);
+}
+
 
 // 0 UZDUOTIS
 // A)
@@ -101,7 +108,8 @@ if (klietoVardas == vardas1) {
 } else {
 	console.log("5% nuolaida kelionems");
 
-}
+}  
+
 // kai "if"-ui padauodame klietoVardas ir vardas2 - isvesti "Buitinei technikai  30% nuolaida"
 // kai "if"-ui padauodame bet ka kita - isvesti "5% nuolaida kelionems"
 

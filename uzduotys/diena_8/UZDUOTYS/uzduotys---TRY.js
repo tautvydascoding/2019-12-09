@@ -8,9 +8,9 @@ console.log(   "Labas"  );
 
     // duomenu pvz:
    // var perkamuPrekiuKiekis = "";
-   // var perkamuPrekiuKiekis = "Tomas";
+   var perkamuPrekiuKiekis = "Tomas";
    // var perkamuPrekiuKiekis = 1;
-   var perkamuPrekiuKiekis = 20;
+   // var perkamuPrekiuKiekis = 20;
    try {
         if(perkamuPrekiuKiekis == "") throw "empty";
         if(isNaN(perkamuPrekiuKiekis)) throw "not a number";
@@ -21,7 +21,12 @@ console.log(   "Labas"  );
         if(perkamuPrekiuKiekis > 100) throw "too high";
    }
    catch ( klaida ) {
-       console.log("Klaida: " + klaida );
+       if (klaida == "not a number") {
+           console.log("prasom ivesti skaiciu");
+       } else if (klaida == "empty") {
+
+       }
+
    }
    finally {
        console.log("nesvarbu kas  - as visada suveiksiu");

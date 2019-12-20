@@ -180,6 +180,7 @@ document.querySelector('body').innerHTML += getH1ElementoAukstis();
 // ####
 // #####
 // ######
+
 let tekstas = "";
 for(i = 0; i < 6; i++) {
   tekstas += "#";
