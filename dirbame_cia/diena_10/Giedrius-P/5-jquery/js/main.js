@@ -67,7 +67,7 @@ function Darbuotojas(nr, vardas, pavarde, alga) {
     this.telefonoNumeris = nr;
     this.Vardas = vardas;
     this.Pavarde = pavarde;
-    this.MenAlga = alga;
+    this.MenesioAlga = alga;
 }
 // 3.1 sukurti pora darbuotoju ir atspausdinti ju duomenis
  var petras = new Darbuotojas(2101010, "Petras", "Petraitis", 12345);
