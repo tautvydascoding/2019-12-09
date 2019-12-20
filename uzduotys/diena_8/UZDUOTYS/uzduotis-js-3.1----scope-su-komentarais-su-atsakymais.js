@@ -58,12 +58,12 @@
 
 
  //======================
- var vardas = "Jonas";   // global - kintamasis
- function myName ( vardas ) { //  vardas - local kintamasis
-     console.log( " vardas" + vardas);
-     console.log("this.vardas - f-jos viduje: ",  this.vardas);    // this - pasiekia ~global kintamuosius (tavo tecio kintamuosius)
- }
- myName("PETRAS");
+ // var vardas = "Jonas";   // global - kintamasis
+ // function myName ( vardas ) { //  vardas - local kintamasis
+ //     console.log( " vardas" + vardas);
+ //     console.log("this.vardas - f-jos viduje: ",  this.vardas);    // this - pasiekia ~global kintamuosius (tavo tecio kintamuosius)
+ // }
+ // myName("PETRAS");
 //======================TEKSTO ISVEDIMAS===============
 
 
