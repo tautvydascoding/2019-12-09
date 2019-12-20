@@ -119,3 +119,16 @@ if (true) {
   console.log(x); // 2
 }
 console.log(x);   //  1
+//---------------------
+let x = 11; // global
+
+function test() {
+    let x = 22; // local
+    if (true) {
+        let x = 33;  // naujas local
+    }
+    console.log("viduje test()", x);
+}
+console.log("pries test()", x);
+test();
+console.log("po test()", x);

@@ -12,7 +12,7 @@ function sveikinuosi(callback){
 
 // UZDUOTIS 1.2
 // iskviesti pasisveikinimo f-ja, ir jai padduoti atsisveikino f-ja
-let printX = function (){
-  console.log("Viso gero");
+function printX(){
+  console.log("Nu ta davai");
 }
 sveikinuosi(printX);
