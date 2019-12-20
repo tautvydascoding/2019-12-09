@@ -13,9 +13,10 @@ vardas: "Petras",
 pavarde: "Petrauskas",
 klase: 7,
 matematikosPazymiai: [4,5,3,1,2,10],
-function begu(){
+begu: function begu(){
   console.log("begu, begu");
 }
+
 
 };
 
@@ -30,6 +31,7 @@ console.log(mokinys);
 mokinys.klase++;
 console.log(mokinys);
 mokinys.klase = 1;
+console.log(mokinys.begu());
 
 
 // UZDUOTIS 1.2.1
@@ -53,11 +55,33 @@ mokinys.klase++;
 }
 
 mokinys.matematikosPazymiai = [10, 8, 7, 6, 5, 10];
+mokinys.miestas = "Kaunas";
 
 // 2 UZDUOTIS: sukurti 2-u atskirus  objektus:
 // A) tevas : vardas(string), pavarde(string), vaikas(object)
 // B) vaikas:  vardas (string), klase(number)
 // 2.1) priskirti "vaikas" objekta - tevo kintamajam vaikas  (kintamajam)
+
+let tevas = {
+
+  vardas: "Petras",
+  pavarde: "Petraitis",
+  vaikas:{}
+};
+
+
+let vaikas = {
+
+vardas: "Antanas",
+klase: 5 };
+
+tevas.vaikas = vaikas;
+console.log(tevas);
+
+
+
+
+
 
 
 // 3 UZDUOTIS
