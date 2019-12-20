@@ -22,7 +22,7 @@
 <?php
 
 echo "php veikia";
-
+khub
 
  ?>
 
