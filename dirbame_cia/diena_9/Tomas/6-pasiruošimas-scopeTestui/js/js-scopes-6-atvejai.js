@@ -12,7 +12,6 @@ function test1() {
     console.log(x);
 }
 
-
 // 3. Ka atspausdina console?
 var x = 5;
 function test1() {
