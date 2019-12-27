@@ -1,4 +1,4 @@
-{
+[
     {
         "title": "Brown eggs",
         "type": "Shirts",
@@ -603,4 +603,4 @@
         "active": true,
         "manufacturer": "Super Tradivar"
     }
-}
+]

@@ -14,7 +14,6 @@ body{
 
 header{
   background-image: url(../libs/img/header-bg.jpg);
-  height: 300px;
   width: auto;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -26,48 +25,20 @@ header{
 
 .logo{
 width: 50%;
-height: 100px;
+
 }
 
 .logo:hover{
     transform: scale(1.1);
 }
 
-.header-top{
+.container-fluid{
   position:relative;
-}
-
-.favs-cart{
-  position: absolute;
-  right: 450px;
-  top: 30px;
-}
-
-.cart{
-  margin-right: 10px;
-}
-
-
-.search{
-  position: absolute;
-  top: 20px;
-  right: 0px;
-}
-.search-field{
-  width: 60%;
-  display: inline;
-  height: 40px;
-}
-
- nav{
-  position: absolute;
-  top: 150px;
-
 }
 
 
 ul.nav {
-    width:101%;
+    width:100%;
     margin:0;
     padding:0;
     list-style:none;
@@ -106,18 +77,17 @@ ul.nav {
 /* ---------------------------------End of Header ------------------- */
 
 
-h1{
+h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
   text-align: center;
-  margin: 5%;
   color: rgb(31, 41, 50);
 
 }
 
 
 
-.item-card{
+.item-card {
   margin-top: 5%;
   margin-left: 0;
 }
@@ -127,15 +97,18 @@ h1{
   margin-left: 15%;;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(33,33,33,.2);
 }
 
-.item-row{
+.item-row {
   width: 100%;
 }
 
+.match_list {
+  background-color: rgba(70, 86, 111, 0.8);
+}
 
 /* ------------------------------end of main------------------- */
 
