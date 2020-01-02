@@ -36,7 +36,7 @@ console.log(matches.length);
         }
     }
 
-    
+
 
 
 searchInput.addEventListener('input', () => searchProducts(searchInput.value));

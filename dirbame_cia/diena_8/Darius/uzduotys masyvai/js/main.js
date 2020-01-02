@@ -23,7 +23,7 @@
 //
 // document.querySelector('p').innerHTML = prekiautojai + " ";}
 //
-// sukeistiMasyvo2elementus(1, 3);
+// sukeistiMasyvo2elementus(1, 2);
 
 
 // UZDUOTIS:
@@ -94,7 +94,7 @@
 // 3. istrinti 3-cia elmenta
 
 // --------GERESNI UZDAVINIAI-------:
-// // 4. sukurti masyva (50 ilgumo) naudojant FOR ir uzpildyti visa skaiciais "0" (kiekvienas stalcius turi but lygus "0");
+// 4. sukurti masyva (50 ilgumo) naudojant FOR ir uzpildyti visa skaiciais "0" (kiekvienas stalcius turi but lygus "0");
 // var x = [];
 // var y = 0;
 // for (i = 0; i < 50; i++) {
@@ -107,7 +107,7 @@
 // [1, 3, 1, 3, 1, 3, 1, 3, 1, 3, ....
 // 5.3: kas 5-ta ^ masyvo elementa pakeisti i "9"
 // [1, 3, 1, 3, 9, 3, 1, 3, 1, 9, ....
-
+//
 // var masyvas = [];
 // var y = 1;
 // i = 0;
@@ -179,10 +179,12 @@
 // E) atspauzdinti  uz f-jos
 // var katinas = "juodas";
 // function skacai(){
-//   var katinas = "baltas";
+//    katinas = "baltas";
+//   let suo = "baltas";
 // }
 // skacai();
 // console.log(katinas);
+// console.log(suo);
 
 //------------------------------------------------
 
@@ -224,29 +226,6 @@
 //  kuri atspausdina i DOM-a (ekrana) "x" reiksme
 //  iskviesti f-ja 3 kartus, kad atspausdintu 3 skirtingas antrastes:  "BMW pinga, nes daugeja", "Greik pageres orai", "Vasaros vis salteja"
 
-
-function printAntraste(x) {
-  document.querySelector("h6").innerHTML += x;
-  console.log(x);
-}
-function printStraipsnis(x) {
-  document.querySelector("p").innerHTML += "<p>" + x + "</p>";
-console.log(x);
-}
-
-printAntraste("BMW pinga, nes daugeja");
-printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit,");
-
-printAntraste("Greik pageres orai");
-printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit, ");
-
-printAntraste("Vasaros vis salteja");
-printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit, ");
-
-
-
-
-
 //  1.2 UZDUOTIS
 //  sukurti funkcija "printStraipsnis(x)"
 //  kuri atspausdina i DOM-a (ekrana) "<p>" + x + "</p>" (paduota teksta tarp "p")
@@ -256,3 +235,188 @@ printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit, ");
 
 
 //=======================================
+//
+// function printAntraste(x) {
+//   document.querySelector("h6").innerHTML += x;
+//   console.log(x);
+// }
+// function printStraipsnis(x) {
+//   document.querySelector("p").innerHTML += "<p>" + x + "</p>";
+// console.log(x);
+// }
+//
+// printAntraste("BMW pinga, nes daugeja");
+// printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit,");
+//
+// printAntraste("Greik pageres orai");
+// printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit, ");
+//
+// printAntraste("Vasaros vis salteja");
+// printStraipsnis("Lorem ipsum dolor sit amet, consectetur adipisicing elit, ");
+
+
+
+
+// UZDUOTIS 1:
+// SUKURTI DVI F-JAS:
+// viena pasisveikina "sveikinuosi()"
+// kita atsisveikina "atsisveikinu()"
+
+// UZDUOTIS 1.1
+// patobulinti f-ja, kuri sveikinasi, kad ji papildoma argumenta "callback"  / "iskviestiPabaigusDarbus"
+
+// UZDUOTIS 1.2
+// iskviesti pasisveikinimo f-ja, ir jai padduoti atsisveikino f-ja
+
+// function sveikinuosi(funkcijosPavadinimas)
+// { console.log("labutaitis");
+// funkcijosPavadinimas();
+// if (funkcijosPavadinimas!= null || funkcijosPavadinimas != undefined) {
+//
+// }
+// }
+// let atsisveikinu = function () // arba  function atsisveikinu();
+// {
+//   console.log("ate");
+// };
+//
+//
+// sveikinuosi(atsisveikinu)
+//
+// sveikinuosi (function() {console.log("anonimine!!!");}); // anonimine funkcija
+// (function() {console.log("anonimine pati save iskviecia!!!"); })();
+//function atsisveikinu(){
+
+
+
+// console.log("labas");
+//
+// =================taisyklingas Array copy  =================
+// var array = ['a', 'b', 'c'];  // Becomes arr1 = ['a', 'b', 'c']
+// //var kopijaNEGERAI =  array; // !!! Blogi  - sukurs susietaja kopija ir redaguojant keisis abu masyvai
+// var kopija1 = array.slice(0);   // Becomes arr2a = ['a', 'b', 'c'] - deep copy
+// var kopija2 = array.concat(  );   // Becomes arr2b = ['a', 'b', 'c'] - deep copy
+
+// ================= ========= ======== ========
+// ieskomiZmones = [2, 16, 17, 18, 19, 25];
+//
+// var lastNames = ["Mcdowell", "Gates", "Mccall", "Cisneros", "Hancock", "Gaines", "Juarez", "Nolan", "Barajas", "Ware", "Orr", "Bell", "Donovan", "Rojas", "Stevenson", "Long", "Hays", "Gibson", "Meyer", "Sims", "Mcintosh", "Craig", "Haney", "Cunningham", "Hunt", "Montgomery", "Spears", "Cooke", "Gregory", "Mcknight", "Fernandez", "Hendrix", "Patton", "Bond", "Skinner", "Randolph", "Montes", "Guerra", "Bowen", "Potts", "Dyer", "Riley", "Rodgers", "Schroeder", "Ferguson", "Garrett", "Rush", "Moon", "Whitney", "Mcdaniel"];
+
+// 1A) surasti vardu masyve, kelintas zmogus yra "Rico" (surasti pirmaji; sunkes- surasti visus riko)
+
+// 1B) papildyti ^: jeigu tokio vardo neranda, isvesti VIENĄ pranesima "Nepavyko rasti...Bandykite kita zodi"
+
+// function Paieska() {
+//   let names = ["Enriqueta", "Sybil", "Piper", "Anh", "Carmelo", "Regan", "Synthia", "Newton", "Norbert", "Krystyna", "Fidelia", "Christoper", "Lewis", "Jeromy", "Joy", "Lorri", "Owen", "Rosenda", "Devora", "Treva", "Leanora", "Meghann", "Jacqueline", "Bunny", "Tenisha", "Rico", "Clementina", "Samella", "Rico", "Sandi", "Efrain", "Tena", "Vivan", "Hiedi", "Naida", "Evette", "Shane", "Freida", "Marielle", "Wynona", "Cheree", "Gaston", "Aja", "Timika", "Jude", "Griselda", "Luise", "Rico", "Minh", "Warren"];
+//
+//   let x = 0;
+//   let VarduNrMasyvas = [x];
+//   for (i = 0; i < names.length; i++) {
+//     if (names[i] === "Rico") {
+//       x = i;
+//       VarduNrMasyvas.push(x);
+//
+//       document.querySelector("p").innerHTML = "Vardo Rico numeriai yra: " + VarduNrMasyvas;
+//     }
+//   }
+//   if (x == 0) {
+//     document.querySelector("p").innerHTML = "Vardo Rico sarase nera ";
+//   }
+// }
+// Paieska();
+
+
+// 2 UZDUOTIS (f-ja iekom stalciaus)
+// parasyti funkcija, kuriai davus iekoma zodi , ji suranda jo vieta masyve (stalciaus numeri) ir si   numeri grazina
+// eg: getStalciausNumeris( ieskomasTekstas)
+
+// function getStalciausNumeris() {
+//   let names = ["Enriqueta", "Rico", "Piper", "Anh", "Carmelo", "Regan", "Synthia", "Newton", "Norbert", "Krystyna", "Fidelia", "Christoper", "Lewis", "Jeromy", "Joy", "Lorri", "Owen", "Rosenda", "Devora", "Treva", "Leanora", "Meghann", "Jacqueline", "Bunny", "Tenisha", "Rico", "Clementina", "Samella", "Rico", "Sandi", "Efrain", "Tena", "Vivan", "Hiedi", "Naida", "Evette", "Shane", "Freida", "Marielle", "Wynona", "Cheree", "Gaston", "Aja", "Timika", "Jude", "Griselda", "Luise", "Rico", "Minh", "Warren"];
+//   let lastNames = ["Mcdowell", "Gates", "Mccall", "Cisneros", "Hancock", "Gaines", "Juarez", "Nolan", "Barajas", "Ware", "Orr", "Bell", "Donovan", "Rojas", "Stevenson", "Long", "Hays", "Gibson", "Meyer", "Sims", "Mcintosh", "Craig", "Haney", "Cunningham", "Hunt", "Montgomery", "Spears", "Cooke", "Gregory", "Mcknight", "Fernandez", "Hendrix", "Patton", "Bond", "Skinner", "Randolph", "Montes", "Guerra", "Bowen", "Potts", "Dyer", "Riley", "Rodgers", "Schroeder", "Ferguson", "Garrett", "Rush", "Moon", "Whitney", "Mcdaniel"];
+//   let ieskomiZmones = [2, 16, 17, 18, 19, 25]
+//   let nr;
+//   let pr;
+//   let sk;
+//   let j, k;
+//   let Skaiciai = [];
+
+//  let Pavardes =[pr];
+// // console.log(names.length);
+// // console.log(lastNames.length);
+// //let vardas = "Gates"
+// for (i = 0; i < names.length; i++) {
+//         if (names[i] == "Rico") {
+//       //vr = names[i];
+//       vr = names[i]
+//       pr = lastNames[i];
+//       Pavardes.push(pr);
+//
+//       document.querySelector('p').innerHTML = vr + " " + Pavardes;
+//     }
+//   }
+
+//  let Pavardes =[pr];
+//         for (i = 0; i < ieskomiZmones.length; i++) {
+// document.querySelector('p').innerHTML += names[ieskomiZmones[i]] + " " +lastNames[ieskomiZmones[i]] ;
+//
+//       }
+//
+//
+// }
+// getStalciausNumeris();
+
+// uzduotis:----------------------------
+// 3) rasti pavarde masyve esancio  zmogaus vardu "Freida" (pirmojo)
+// 4) rasti visu zmoniu vardu "Rico" pavardes
+// 5) Turime masyva su zmoniu nr.  ieskomiZmones = [2, 16, 17, 18, 19, 25];
+// A) atspausdinti visus numerius
+// B) isvesti ju pavardes ir vardus
+
+
+
+// var a = Math.random(); // 0 - 1
+// if ( a <= 0.1) {
+//     console.log("laimejai");
+// }
+
+
+// 6. sukurti du masyvus (skirtingus)
+// naudojant for cikla sujungti juos, kas antra elementa
+// [pirmo masyvo, antro masyvo, pirmo masyvo, antro masyvo , ...]
+
+// sunkesnis
+// susikurti masyva su prekiu pavadinimais
+// naudojant FOR  parasykite/pergrupuokite ji atvirksciai
+
+
+let MasyvasA = [1, 2, 3, 4, 5, 6, 7];
+let MasyvasB = ['A', 'B', 'C', 'D', 'E', 'F'];
+let MasyvasC = [];
+let x = 0;
+let a = 0;
+let b = 0;
+let c = 0;
+let i = 0;
+
+// for (i=1; i<MasyvasA.length; i++)
+// {if ((i%2)==true)
+//   { a = MasyvasA[i];
+//     b = MasyvasB[i];
+//
+//     MasyvasC.push(a);
+//     MasyvasC.push(b);
+//
+//   }
+//
+// }
+// console.log(MasyvasC);
+b = MasyvasB.length;
+
+for (i = 0; i < b; ){
+  //while (b == 0); {
+  b--;
+  c = MasyvasB[b]
+  MasyvasC.push(c);
+
+}
+console.log(MasyvasC);
