@@ -12,11 +12,12 @@ index.php
 ================turetu gautis======
 
 index.php Faile naudojant f-ja include('kelias')     "iterpti" header, main ir footer failus, pvz:
-index.php
-    include('header.php');
-    include('main.php');
-    include('footer.php');
-
+index.php:
+    <?php
+        include('header.php');
+        include('main.php');
+        include('footer.php');
+    ?>
 header.php   faile - turetu buti visas puslapio virsus:
  <html>
      <head>
