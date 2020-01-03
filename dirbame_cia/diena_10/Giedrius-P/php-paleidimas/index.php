@@ -18,7 +18,7 @@
              <h1>kodinant PHP reikia atidaryti ir uzdaryti</h1>
              <h1>reikia paleisti apache serverio(MAMP ijungti)</h1>
               <?php
-              
+                mysqli_
                 echo "PHP veikia";
 
               ?>
