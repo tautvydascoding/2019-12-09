@@ -14,14 +14,16 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>failo galune turi buti PHP</h1>
-             <h1>kodinant PHP reikia atidaryti ir uzdaryti</h1>
-             <h1>reikia paleisti apache serverio(MAMP ijungti)</h1>
-              <?php
-                mysqli_
-                echo "PHP veikia";
-
+             <h1>Failo galune turi buti .php</h1>
+             <h1>Reik nepamirst php faila atidaryt ir uzdaryt.</h1>
+             <h1>Reik paleisto apache serverio (ijungti MAMP).</h1>
+             <?php
+              echo "PHP veikia";
+              echo "PHP veikia";
+              echo "PHP veikia";
+              mysqli_
               ?>
+
 
 
 
