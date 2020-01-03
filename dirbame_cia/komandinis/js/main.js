@@ -9,7 +9,7 @@ const searchProducts = async searchText => {
     const products = await res.json();
 
     let matches = products.filter(product => {
-        const regex = new RegExp(`^${searchText}`, 'gi');
+        const regex = new RegExp(`${searchText}`, 'gi');
         return product.title.match(regex);
     });
 
