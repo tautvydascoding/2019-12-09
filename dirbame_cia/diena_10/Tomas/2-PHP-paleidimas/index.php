@@ -17,9 +17,12 @@
              <h1>Failo galune turi but php</h1>
             <h1>Kodinant reikia php atidaryti ir uzdaryti</h1>
              <h1>Reikia paleisti apache serverio (MAMP ijungti)</h1>
+             <h1>Pasileisti localhost</h1>
 
              <?php
-                  echo "PHP veikia";
+                  echo == /"PHP veikia"
+                  echo == "PHP veikia"
+                  echo == "PHP veikia"
               ?>
 
 

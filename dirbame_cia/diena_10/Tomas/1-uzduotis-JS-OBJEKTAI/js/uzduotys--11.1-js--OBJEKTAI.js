@@ -73,7 +73,7 @@ tevas.vardas = "Petras";
 tevas.pavarde = "Petrauskas";
 
 vaikas.vardas = "Jonas";
-vaikas.klase = ""
+vaikas.klase = "";
 
 // 2.1) priskirti "vaikas" objekta - tevo kintamajam vaikas  (kintamajam)
 
