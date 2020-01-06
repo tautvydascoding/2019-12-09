@@ -5,7 +5,7 @@ var zmogus; // undefined
 
 //===========================================
 // 1 UZDUOTIS:
-// sukurti mokinio objekta: vardas, pavarde, kelintokas, mokinio matematikos pazymiai (6, 5, 9 , 10, 8)
+// sukurti mokinio objekta: vardas: "", pavarde: "", kelintokas: 0, mokinio matematikos pazymiai (6, 5, 9 , 10, 8)
 // (ir priskirti reiksmes pvz: 'Jurgis', "Jurgauskas", 7)
 
 // 1.1 UZDUOTIS
@@ -32,13 +32,19 @@ var zmogus; // undefined
 // sukurti  objekto "darbuotojas" construktoriu. Objektas darbuotojas: nr, vardas, pavarde, alga
 // 3.1 sukurti pora darbuotoju ir atspausdinti ju duomenis
 
+
 //============3=pvz: construktorius =====
-// function Car(dSkaicius, spalva, greitis) {
-//     this.numberOfDoors = dSkaicius;
-//     this.color = spalva;
-//     this.maxSpeed = greitis;
-// }
-//
-// // objekto kurimas
-// var AudiTT  = new Car(2, "red", 280);
-// var Audi100 = new Car(5, "black", 200);
+function Car(dSkaicius, spalva, greitis) {
+    this.numberOfDoors = dSkaicius;
+    this.color = spalva;
+    this.maxSpeed = greitis;
+}
+
+// objekto kurimas
+var AudiTT  = new Car(2, "red", 280);
+var Audi100 = new Car(5, "black", 200);
+console.log( AudiTT.color );
+console.log( AudiTT.maxSpeed );
+
+console.log( Audi100.color );
+console.log( Audi100.maxSpeed );

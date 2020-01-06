@@ -82,5 +82,12 @@ pitagoroTeorema(10, 5);
 
 
 
+
+
+
+
+
+
+
 //==========================KOMANDINE (3-4h) Bootstrap && GIT=================
 // ant lentos
