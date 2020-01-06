@@ -46,7 +46,20 @@
           print_r($preke);
           echo "<br>";
           $preke["pardavimukiekis"] = 180;
-          echo ("pardavimo kiekis: ".$preke["pardavimukiekis"]);
+          echo ("pardavimo kiekis: ".$preke["pardavimukiekis"]."<br>");
+
+          $darbuotojas = [
+            "vardas" => "Juozas",
+            "asmk" => 339393993,
+            "gimdata" => "1991-01-01",
+            "pardavimukiekis" => 120
+          ];
+          foreach ($darbuotojas as $darbuotojoStalcius) {
+            echo "$darbuotojoStalcius <br>";
+          };
+
+          print_r($darbuotojas);
+          var_dump($darbuotojas);
            ?>
         </div>
 
