@@ -13,19 +13,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container  bg-light">
-             <h1>Failo galune turi but php</h1>
-            <h1>Kodinant reikia php atidaryti ir uzdaryti</h1>
-             <h1>Reikia paleisti apache serverio (MAMP ijungti)</h1>
 
-             <?php
-                  echo "PHP veikia";
-              ?>
-
-
-        </div>
-
-
+      <?php
+          include('header.php');
+          include('main.php');
+          include('footer.php');
+      ?>
 
 
         <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>
