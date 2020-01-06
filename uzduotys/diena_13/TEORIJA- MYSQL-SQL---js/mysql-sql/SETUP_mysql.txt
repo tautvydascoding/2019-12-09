@@ -1,6 +1,6 @@
 ============WIN===================
 einam MAMP/bin/mysql/bin
-randame mysql.exe ir ant jo spaudizma DPK -  Send To  Desctop
+randame mysql.exe ir ant jo spaudizma DPK -  Send To  Desktop
 ant to failiuko, kuri nusiuntem mysql.exe
 spaudzima DPK - > Properties
 ....exe -u root -p
