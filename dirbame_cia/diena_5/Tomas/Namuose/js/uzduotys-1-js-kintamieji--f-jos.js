@@ -113,10 +113,6 @@ pitagoroTeorema(10, 15);
 
 
 
-
-
-
-
 /*function pitagoroTeorema(x, y) {
   console.log( Math.sqrt (x * x + y * y));
 }
