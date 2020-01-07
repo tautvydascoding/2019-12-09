@@ -42,17 +42,45 @@ function getDoctor($nr) {
      // print_r($rezultataiArray);
      return $rezultataiArray;
 }
- $gydytojas1 = getDoctor(2);
- $gydytojas2 = getDoctor(4);
- $gydytojas3 = getDoctor(6);
+// testuojam
+ // $gydytojas1 = getDoctor(2);
+ // print_r($gydytojas1);
+ // echo "<hr>";
 
- print_r($gydytojas1);
- echo "<hr>";
- print_r($gydytojas2);
- echo "<hr>";
- print_r($gydytojas3);  
- echo "<hr>";
+function createDoctor($vard, $pavard) {
+    $manoSQL = "INSERT INTO doctors
+                       VALUES(NULL, '$vard', '$pavard')
+               ";
+    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($arPavyko == false &&  DEBUG_MODE > 0) {
+            echo "ERROR: nepavyko sukurti naujo gydytojo: $vard, $pavard DB-je !!!! <br>";
+            echo  mysqli_error(getPrisijungimas()); // neveikia, matyt nes naujas MYSQL serveris
+    }
+}
+// test
+// createDoctor('Petras', 'Uzurpatorius');
+// createDoctor('Antanas', 'Kalkinas');
 
+// $nr - duomenu bazeje esancio gydytojo numeris
+function deleteDoctor($nr) {
+    $manoSQL = "DELETE FROM doctors WHERE id = '$nr'  LIMIT 1 ";
+    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($arPavyko == false &&  DEBUG_MODE > 0) {
+            echo "ERROR: nepavyko istrinti: $nr gydytojo DB-je !!!! <br>";
+     }
+}
 
-//
-//
+function updateDoctor($nr, $vard, $pavard) {
+    $manoSQL = "UPDATE  doctors
+                        SET
+                            name = '$vard',
+                            lname = '$pavard'
+                        WHERE id = '$nr'
+                        LIMIT 1
+                ";
+    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($arPavyko == false &&  DEBUG_MODE > 0) {
+            echo "ERROR: nepavyko redaguoti: $nr gydytojo DB-je !!!! <br>";
+     }
+}
+updateDoctor(2, "Karolis", "Karalaitis");
