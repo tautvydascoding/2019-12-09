@@ -24,12 +24,35 @@ function getPrisijungimas() {
             return $prisijungimas;
     }
 }
-getPrisijungimas();
+// getPrisijungimas();  test
+
+// grazina konkretu gydytojo duomenis is DB
+// $nr    - norimo gydytojo 'id' is duomenu bazes
+// return - grazina array
+function getDoctor($nr) {
+    // ! visada patestuoti SQL terminale !!
+     $manoSQL = "SELECT * FROM doctors WHERE id = '$nr'  ";
+     $rezultataiMysqlObjek = mysqli_query(getPrisijungimas(), $manoSQL);
+     //test
+     // print_r($rezultataiMysqlObjek);
+     // is mysqli objekto paimame viena eilute ir paverciam i array
+     $rezultataiArray = mysqli_fetch_assoc($rezultataiMysqlObjek);
+     //test
+     // echo "<hr>";
+     // print_r($rezultataiArray);
+     return $rezultataiArray;
+}
+ $gydytojas1 = getDoctor(2);
+ $gydytojas2 = getDoctor(4);
+ $gydytojas3 = getDoctor(6);
+
+ print_r($gydytojas1);
+ echo "<hr>";
+ print_r($gydytojas2);
+ echo "<hr>";
+ print_r($gydytojas3);  
+ echo "<hr>";
 
 
 //
-function getDoctor() {
-    
-}
-
 //
