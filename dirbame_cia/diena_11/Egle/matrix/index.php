@@ -31,9 +31,33 @@
 
           <?php
 
-            $darbuotojas1 = [ "Jonas", " Jonaitis", 1980, "Inspektorius"];
-            $darbuotojas2 =  ["Ona", "Onute", 1980, "Sekretore"];
-            $darbuotojas3 = ["Kestas", "Kerta", 2001, "pavaduotojas"];
+            $auto1 = ['audi A4', 1.9];
+            $auto2 = ['audi A6', 2.2];
+            $auto3 = ['audi A7', 4.0];
+
+            $visiAuto = [$auto1, $auto2, $auto3];
+
+            $visiAuto[0][1];
+
+            echo $visiAuto[2][0] . "<br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            $darbuotojas1 = [ "Jonas ", "Jonaitis ", 1980, " Inspektorius "];
+            $darbuotojas2 =  ["Ona ", "Onute ", 1980, " Sekretore "];
+            $darbuotojas3 = ["Kestas ", "Kerta ", 2001, " Pavaduotojas "];
 
             $visiDarbuotojai = [$darbuotojas1, $darbuotojas2, $darbuotojas3];
 
@@ -59,9 +83,26 @@
             for ($i=0; $i <count($visiDarbuotojai) ; $i++) {
               echo $visiDarbuotojai[$i][0] . " ";
               echo $visiDarbuotojai[$i][1] . " ";
+              echo $visiDarbuotojai[$i][2] . " ";
               echo $visiDarbuotojai[$i][3] . " ";
               echo "<br />";
             }
+
+            // isvesti visa informacija apie kiekviena  darbuotoja  (naudojant DU FOR ciklus) -->
+
+            // matricos ilgis daznai skiriasi nuo plocio.
+            //  pvz.:
+             // for ( i < eiluciuSkaicius)
+             //    for ( k < stulpeliuSkaicius)
+
+
+              for ($i=0; $i <count($visiDarbuotojai) ; $i++) {
+                echo "<br />";
+                for ($j=0; $j < count($visiDarbuotojai[$i]) ; $j++) {
+                  echo $visiDarbuotojai[$i][$j];
+                }
+              };
+
 
 
 
