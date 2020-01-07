@@ -46,7 +46,10 @@
               echo "<br>";
               echo "<br>";
               echo "<br>";
+              ?>
+              <div class="row">
 
+              <?php
               // UZDUOTIS 2 --------------
               // sukurti matrica, kurioje bus saugoma kiekvienos prekes info:
               // Antraste, img pavadinimas, kaina, prekes aprasymas
@@ -56,13 +59,26 @@
               // C. atvaizduodi kiekvienoje eiluteje po 3 prekes (naudojant for arba foreach)
               // ir bootstrap dizaina
 
-              $preke = ['Antraste', 'nuotrauka', 'kaina', 'aprasymas'];
-              $visosPrekes = [$preke];
-              
+              $preke1 = ['Antraste', 'nuotrauka', 'kaina', 'aprasymas'];
+              $preke2 = ['Antraste', 'nuotrauka', 'kaina', 'aprasymas'];
+              $preke3 = ['Antraste', 'nuotrauka', 'kaina', 'aprasymas'];
+              $preke4 = ['Antraste', 'nuotrauka', 'kaina', 'aprasymas'];
+              $visosPrekes = [$preke1, $preke2, $preke3, $preke4];
+
+                for ($i=0; $i < count($visosPrekes); $i++) {
+                  print_r("<article class='col-4'>
+                      <h2>" . $visosPrekes[$i][0] . "</h2>
+                      <p>" . $visosPrekes[$i][3] . "</p>
+                      <button class='btn btn-lg  bg-info'>" . $visosPrekes[$i][2] . "</button>
+                  </article>");
+                }
+
+                ?>
+              </div>
 
 
 
-              ?>
+
 
 
         </div>
