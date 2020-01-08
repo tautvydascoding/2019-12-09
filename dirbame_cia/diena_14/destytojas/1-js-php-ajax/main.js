@@ -4,7 +4,7 @@ console.log("ar veikia?");
 $.ajax({
   url: "test.php",
   type: "POST",
-  data: {name: "John", location: "Boston"},
+  data: {name: "Tautvis", location: "Boston", age: 21},
   success: function(gryzo){
         console.log("lyg suveike");
         console.log(gryzo);
@@ -15,9 +15,14 @@ $.ajax({
         // $("#results").append(gryzoPaverstasIString.vardas);
                 /* OR */
         //====== jei PHP darot: echo parseTOJSON( $manoAray);====
+        // kintamasis 'gryzo' - yra string tipo:  { 'vardas': 'John', 'vietove': 'Boston' }
         gryzoPaverstasIJSON = JSON.parse(gryzo);
+        // JSON.parse sukuria is String (kuris atrodo kaip JSON)
+        // tikra JSON objekta
         console.log(gryzoPaverstasIJSON);
         //this is what I am unsure about?
+        document.querySelector('#results').innerHTML += gryzoPaverstasIJSON.vietove;
+        // ARBA
          $("#results").append(gryzoPaverstasIJSON.vardas);
   },
 
