@@ -69,7 +69,7 @@
                   print_r("<article class='col-4'>
                       <h2>" . $visosPrekes[$i][0] . "</h2>
                       <p>" . $visosPrekes[$i][3] . "</p>
-                      <button class='btn btn-lg  bg-info'>" . $visosPrekes[$i][2] . "</button>
+                      <button class='btn-lg  bg-info'>" . $visosPrekes[$i][2] . "</button>
                   </article>");
                 }
 
