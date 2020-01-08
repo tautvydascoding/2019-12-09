@@ -14,9 +14,35 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
-
+             <h1 class=" bg bg-info">Poliklinika</h1>
+             <a href="page-results.php?x=gydytojai"> Visi Gydytojai</a>
+             <a href="page-results.php?x=pacientai"> Visi Pacientai</a>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

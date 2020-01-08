@@ -12,14 +12,14 @@ echo $new_var;
 
 
 $a = 99; /* global scope    */
-// A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function 
+// A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function
 
 function test()
-{ 
-    echo $a; /* reference to local scope variable */ 
+{
+    echo $a; /* reference to local scope variable */
     // A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function
     // You can have local variables with the same name in different functions, because local variables are only recognized by the function in which they are declared.
-} 
+}
 
 test();
 
@@ -36,7 +36,7 @@ function Sum()
 
     $b = $a + $b;
     echo "$a, $b <br>";
-} 
+}
 
 Sum();
 echo $b;
@@ -50,7 +50,7 @@ function Sum()
 {
     $GLOBALS['b'] = $GLOBALS['a'] + $GLOBALS['b'];
     //PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within functions and can be used to update global variables directly.
-} 
+}
 
 Sum();
 echo $b;
