@@ -14,7 +14,7 @@ SELECT User, Password, Grant_priv FROM user;
 
 
 
- 
+
 
 -- DB sukurimas
 CREATE DATABASE hospital12;
@@ -83,4 +83,17 @@ UPDATE patients
 
 
 
---
+4) sprendimas
+SELECT doctors.lname     	// ko ieskome ir ka grazins
+	FROM patients, doctors  // su kokiomis lentelemis dirbsime
+	WHERE patients.name = 'Tom' AND patients.doctor_id = doctors.id;
+
+// OR
+
+SELECT doctors.lname      // ko ieskome ir ka grazins
+	FROM doctors          // pagal kurios lenteles duomenis
+	INNER JOIN patients ON patients.doctor_id = doctors.id
+	WHERE patients.name = 'Tom';
+
+
+ 
