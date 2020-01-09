@@ -24,11 +24,11 @@ id    vardas   klausimas    tel_1              email
 =======vartotoju atsiliepimai/komentarai ========
 id    vardas   user_id   atsiliepimas/komentaras   ar_rodyti   data              email
 1     Tomas       13      Lorem....                true     2010-06-06          Tomas@tomas.lt
-2     Julius      64     Lorem....                 false    2010-06-05         julius@julius.lt
+2     Julius      64      Lorem....                 false    2010-06-05         julius@julius.lt
 
 ======= Prekes/ straisniai   ========
 id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kiekis
-1     Dviratis       Lorem....     659
+1     Dviratis        Lorem....     659
 2     Paspirtukas     Lorem....     49.99       5           99999
 3     Rieduciai       Lorem....     359         20          2
 
