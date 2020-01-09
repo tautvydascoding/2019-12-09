@@ -13,19 +13,20 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container bg-light">
+        <!-- <div class="container bg-light">
              <h6>Failo galune turi but php</h6>
              <h6>Kodinant reikia php atidaryti ir uzdaryti</h6>
              <h6>Reikia paleisti apache serverio (MAMP ijungti)</h6>
              <h6>Pasileisti localhost</h6>
 
-        </div>
+        </div> -->
 
         <?php
         // echo "naujas tekstas <br>";
         // echo "naujas tekstas <br>";
         // echo  "<div> naujas tekstas </div>";
-        // echo "pirmas " . "antras " . "trecias <br>";
+        echo "pirmas " . "antras " . "trecias <br>";
+        echo $x = 5 + /* + 5 */ 5;
         // $x = 1 + 2;
         // $vardas = "vardas"; //string
         // $cars = [];  //array
@@ -50,26 +51,26 @@
          // "BMW" - atspausdinti "Susimastykite apie greiti ir vairavimo kultura"
          // "opel" - atspausdinti "Susimastykite apie naujus priedus"
 
-         $vardas = "  auDi";
-         $vardas = htmlspecialchars($vardas, ENT_QUOTES ); //saugumui, uzkoduoja html simbolius
-         $vardas = trim($vardas); //pasalinami aplinkiniai tarpai, tab, trim'inami aplinkiniai tarpai
-         $vardas = strtolower($vardas); //sumazinam raides
-
-
-         switch ($vardas) {
-           case 'audi':
-           echo "Susimastykite apie variklio prieziura <br>";
-           break;
-           case 'bmw':
-           echo "Susimastykite apie greiti ir vairavimo kultura <br>";
-           break;
-           case 'opel':
-           echo "Susimastykite apie naujus priedus <br>";
-           break;
-
-           default:
-                  echo "tokios markes: $vardas mes nezinome <br>";
-         }
+         // $vardas = "  auDi";
+         // $vardas = htmlspecialchars($vardas, ENT_QUOTES ); //saugumui, uzkoduoja html simbolius
+         // $vardas = trim($vardas); //pasalinami aplinkiniai tarpai, tab, trim'inami aplinkiniai tarpai
+         // $vardas = strtolower($vardas); //sumazinam raides
+         //
+         //
+         // switch ($vardas) {
+         //   case 'audi':
+         //   echo "Susimastykite apie variklio prieziura <br>";
+         //   break;
+         //   case 'bmw':
+         //   echo "Susimastykite apie greiti ir vairavimo kultura <br>";
+         //   break;
+         //   case 'opel':
+         //   echo "Susimastykite apie naujus priedus <br>";
+         //   break;
+         //
+         //   default:
+         //          echo "tokios markes: $vardas mes nezinome <br>";
+         // }
 
 
         ?>

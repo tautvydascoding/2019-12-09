@@ -20,9 +20,9 @@
              <h1>Pasileisti localhost</h1>
 
              <?php
-                  echo == /"PHP veikia"
-                  echo == "PHP veikia"
-                  echo == "PHP veikia"
+                  echo "PHP veikia" . "PHP veikia <br>";
+                  echo "PHP veikia";
+                  echo "PHP veikia";
               ?>
 
 

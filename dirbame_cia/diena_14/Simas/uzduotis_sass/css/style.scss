@@ -1,0 +1,49 @@
+// kintamieji
+$color_main : red;
+$color_sub : blue;
+$main_text : 29px;
+$sub_text : 16px;
+$weight_main : 100;
+$weight_sub : 600;
+// ---------------------
+h1 {
+    color: red;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+.main h2 {
+  color: $color_main;
+  font:{
+    size: $main_text;
+    weight: $weight_main;
+  }
+}
+.main p {
+  font:{
+    size: $sub_text;
+    weight: $weight_sub;
+  }
+}
+aside h2 {
+  color: $color_sub;
+  font:{
+    size: $main_text;
+    weight: $weight_sub;
+  }
+}
+aside p {
+  font:{
+    size: $sub_text;
+    weight: $weight_main;
+  }
+}
