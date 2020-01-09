@@ -1,0 +1,37 @@
+$raudona: red;
+$melyna: blue;
+$mazas-text: 16px;
+$didelis-text: 29px;
+$svoris_mazas: 100;
+$svoris_didelis: 600;
+
+div {
+  h1 {
+    color: $melyna;
+    font: {
+    size: $didelis-text;
+    weight: $svoris_didelis;
+  }
+  }
+}
+  p {
+    font: {
+    size: $mazas-text;
+    weight: $svoris-mazas;
+  }
+}
+aside {
+  h1 {
+    color: $raudona;
+    font: {
+    size: $didelis-text;
+    weight: $svoris_didelis;
+  }
+  }
+}
+  p {
+    font: {
+    size: $mazas-text;
+    weight: $svoris-mazas;
+  }
+}

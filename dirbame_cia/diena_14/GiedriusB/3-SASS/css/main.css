@@ -1,0 +1,25 @@
+/* pagrindines spalvos */
+/* sviesi #b2b2b2 */
+/* tamsesne #a2a2a2*/
+/* tamsi #22222*/
+/* -------------------- */
+h1 {
+  color: #b2b2b2;
+  font-size: 24px;
+}
+
+.aukstis-100 {
+  height: 100px;
+}
+
+.aukstis-200 {
+  height: 200px;
+}
+
+.aukstis-300 {
+  height: 300px;
+}
+
+.aukstis-500 {
+  height: 500px;
+}
