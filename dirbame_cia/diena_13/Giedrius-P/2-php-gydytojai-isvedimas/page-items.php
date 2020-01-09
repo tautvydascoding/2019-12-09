@@ -14,8 +14,13 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
-
+             <h1>Gydytojas:</h1>
+             <hr>
+             <?php
+             require_once('models/doctor-functions.php');
+             $gyd = getDocter( $_GET['id']);
+             echo $gyd['name']." ".$gyd['lastname'];
+             ?>
         </div>
 
 

@@ -7,7 +7,7 @@ $.ajax({
   data: {name: "John", location: "Boston"},
   success: function(gryzo){
         console.log("lyg suveike");
-        console.log(gryzo);
+        // console.log(gryzo);
 
         // =======jei PHP darot: echo "String";================
         // gryzoPaverstasIString = JSON.stringify(gryzo);
@@ -18,7 +18,7 @@ $.ajax({
         gryzoPaverstasIJSON = JSON.parse(gryzo);
         console.log(gryzoPaverstasIJSON);
         //this is what I am unsure about?
-         $("#results").append(gryzoPaverstasIJSON.vardas);
+         $("#results").append(gryzoPaverstasIJSON.vardas + " " + gryzoPaverstasIJSON.vieta);
   },
 
   error: function(e) {

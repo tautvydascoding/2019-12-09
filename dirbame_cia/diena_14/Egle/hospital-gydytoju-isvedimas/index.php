@@ -14,14 +14,41 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Visi Gydytojai</h1>
-             <?php
-             require_once('models/doctor-functions.php');
-             for ($i=0; $i < 10 ; $i++) {
-               $gydytojas = getDocter($i);?>
-               <a href='page-items.php?id=<?= $i ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
-               <br>
-             <?php } ?>
+             <h1 class=" bg-info ">Hospital</h1>
+
+             <a class="mt-5 mb-5 mr-5" href="page-results.php?x=gydytojai"> Visi Gydytojai </a>
+             <a class="mt-5 mb-5" href="page-results.php?x=pacientai"> Visi Pacientai </a>
+
+
+             <form class="mt-5" action="naujasGydytojas.php" method="post">
+                <input type="text" name="vardas" value=""> <br />
+                <input type="text" name="pavarde" value=""> <br />
+                <input type="submit" name="" value="Registruotis">
+             </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
 

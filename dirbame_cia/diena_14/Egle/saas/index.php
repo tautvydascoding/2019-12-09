@@ -14,14 +14,10 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Visi Gydytojai</h1>
-             <?php
-             require_once('models/doctor-functions.php');
-             for ($i=0; $i < 10 ; $i++) {
-               $gydytojas = getDocter($i);?>
-               <a href='page-items.php?id=<?= $i ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
-               <br>
-             <?php } ?>
+            <h2>bandymas</h2>
+             <h1 class="alert">Isijuk inspect->console</h1>
+
+
         </div>
 
 
