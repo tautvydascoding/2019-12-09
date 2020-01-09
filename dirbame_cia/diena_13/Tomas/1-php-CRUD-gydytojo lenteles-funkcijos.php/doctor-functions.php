@@ -4,7 +4,7 @@
     define( 'DB_PAVADINIMAS',    'hospital12' );
     define( 'DB_TIPAS',          'localhost' );
     define( 'MYSQL_USER_VARDAS', 'root' );
-    define( 'MYSQL_USER_PASS',   'root' );
+    define( 'MYSQL_USER_PASS',   '' );
     // 0 isjungta; 1- rodo pagrindiniai; 2- rodo visus pranesimus
     define( 'DEBUG_MODE',   '1' );
 
@@ -54,5 +54,24 @@ function getDoctor($nr) {
  echo "<hr>";
 
 
+function createDoctor($vard, $pavard) {
+  $manoSQL = "DELETE FROM doctors WHERE id = '$nr' LIMIT 1 ";
+
+
+  $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+  if ($arPavyko == false && DEBUG_MODE > 0) {
+      echo "ERROR: nepavyko sukurti naujo gydytojo DB-e !!!! <br>";
+      echo  mysqli_error($prisijungimas());
+      echo  mysqli_error($prisijungimas()); // neveikia
+  }
+}
+
+
+
+//test
+createDoctor('Petras', 'Uzurpatorius');
+// createDoctor('Petras', 'Uzurpatorius');
 //
 //
+
+?>
