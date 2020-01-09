@@ -14,22 +14,15 @@
     </head>
     <body>
         <div class="container  bg-light">
-
+             <h1>Poliklinika</h1>
+             <h2>VISI GYDYTOJAI</h2>
              <?php
-             echo "<h1>" . $_GET['x'] . "</h1>";
-             require_once('Models/' . $_GET['x'] . '-functions.php');
-                if ($_GET['x'] == "doctor") {
-                  for ($i=0; $i < 6; $i++) {
-                    $gydytojas = getDoctor($i);
-                    echo "<a href='page-item.php?x=doctor&id=$i'>" . $gydytojas['name'] . " " . $gydytojas['lname'] . "</a>";
-                    echo "<br>";
-                  }
-                } elseif ($_GET['x'] == "patients") {
-                  for ($i=1; $i < 9; $i++) {
-                    $pacientas = getPatient($i);
-                    echo "<a href='page-item.php?x=patients&id=$i'>" . $pacientas['name'] . " " . $pacientas['lname'] . "</a>";
-                    echo "<br>";
-                  }
+                require_once('models/doctor-functions.php');
+                $visiGyd = getDoctors(); //cia yra MySQL objektas
+                $gydytojas = mysqli_fetch_assoc($visiGyd);
+                while ($gydytojas) {
+                  echo "<a href='page-results.php?id=$gydytojas[id]'> $gydytojas[name] $gydytojas[lname] </a><br>";
+                  $gydytojas = mysqli_fetch_assoc($visiGyd);
                 }
               ?>
         </div>

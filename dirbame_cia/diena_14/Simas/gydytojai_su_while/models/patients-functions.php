@@ -37,16 +37,6 @@ function getPatient($nr) {
   return $resultsArray;
   }
 }
-// $nr - paciento id kurio daktaro ieskome
-function innerJoin($nr){
-  $manoSQL = "SELECT doctors.name, doctors.lname, doctors.id FROM doctors
-                INNER JOIN patients
-                ON doctors.id = patients.doctor_id
-                WHERE patients.id = '$nr' ";
-  $suradimas = mysqli_query(getPrisijungimas(), $manoSQL);
-  $isvedimas = mysqli_fetch_assoc($suradimas);
-  return $isvedimas;
-}
 
 // paciento kurimas
 // $vard ir $pavard -- naujo paciento vardas ir pavarde, $docId -- priskirto daktaro id
