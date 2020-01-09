@@ -14,9 +14,17 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Poliklinika</h1>
-             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
+             <h1>Forma:</h1>
+             <div class="row d-flex">
+             <form class="col-4" action="models/registracija.php?mano_getas=10" method="post">
+               <input style="width: 100%" type="text" name="vardas" value="" placeholder="Iveskite varda">
+               <input style="width: 100%" type="text" name="pavarde" value="" placeholder="Iveskite Pavarde">
+               <input style="width: 100%" type="text" name="telNumeris" value="" placeholder="Iveskite telefona">
+               <div class="mt-2 d-flex justify-content-end">
+                 <button type="submit" name="">REGISTRUOTIS</button>
+               </div>
+             </form>
+           </div>
         </div>
 
 
