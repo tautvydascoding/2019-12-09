@@ -55,6 +55,7 @@ function getDoctor($nr) {
 //   echo "<hr>";
 // }
 
+
 // $vardas $pavard naujojo daktaro vardas ir pavarde
 function createDoctor($vardas, $pavard) {
   $manoSQL = "INSERT INTO doctors VALUES (NULL, '$vardas', '$pavard') ";
@@ -76,9 +77,21 @@ function deleteDoctor($nr) {
 
 // $nr --- norimo reedaguoti daktaro id, $vardas ir $pavard -- naujas vardas ir pavarde
 function updateDoctor($nr, $vardas, $pavard) {
+  $nr = htmlspecialchars($nr, ENT_QUOTES);
+  $vardas = htmlspecialchars($vardas, ENT_QUOTES);
+  $pavard = htmlspecialchars($pavard, ENT_QUOTES);
+
+
   $manoSQL = "UPDATE doctors SET name = '$vardas', lname = '$pavard' WHERE id = '$nr' LIMIT 1 ";
   $updatas = mysqli_query(getPrisijungimas(), $manoSQL);
   if ($updatas == false && DEBUG_MODE > 0) {
     echo "ERROR!!!! NEpavyko redaguoti gydytojo nr: $nr";
   }
+}
+
+// $kiekis - kiek gydytoju surasti
+function getDoctors($kiekis = 999999) {
+  $manoSQL = "SELECT * FROM doctors LIMIT $kiekis ";
+  $results = mysqli_query(getPrisijungimas(), $manoSQL);
+  return $results;
 }
