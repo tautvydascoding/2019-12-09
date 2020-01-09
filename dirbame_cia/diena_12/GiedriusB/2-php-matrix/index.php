@@ -87,7 +87,16 @@
         $preke2 = ["Antraste2", "2.jpg", "Prekes aprasymas2: labai gera preke ir t.t, visi pirkit.", 300];
         $preke3 = ["Antraste3", "3.jpg", "Prekes aprasymas3: labai gera preke ir t.t, visi pirkit.", 400];
         $visosPrekes = [$preke1, $preke2, $preke3];
-        for ($i=0; $i < 3; $i++) {
+        for ($i=0; $i < 3; $i++) { ?>
+          <article class='col-4'>
+          <h2><?php echo $visosPrekes[$i][0]?></h2>
+          <img src='img/<?php echo ($visosPrekes[$i][1]) ?>' alt='img<?php echo $i ?>'>
+          <p><?php echo $visosPrekes[$i][2] ?></p>
+          <button>
+          <a class='btn btn-lg bg-info'><?php echo $visosPrekes[$i][3] ?> </a>
+          </article>
+
+        <!-- for ($i=0; $i < 3; $i++) {
           echo
           "<article class='col-4'>
           <h2>".$visosPrekes[$i][0]."</h2>
@@ -95,8 +104,9 @@
           <p>".$visosPrekes[$i][2]."</p>
           <button>
           <a class='btn btn-lg bg-info'>".$visosPrekes[$i][3]." </a>
-          </article>";
-        }
+          </article>"; -->
+        <?php
+      }
         ?>
        </div>
 
