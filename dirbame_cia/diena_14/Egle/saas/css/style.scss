@@ -1,0 +1,36 @@
+
+/* pagrindines spalvos */
+/* sviesi #b2b2b2 */
+/* tamsesne $#2a2a2 */
+/* tamsi #333222 */
+/*  */
+
+$color_sviesi : #b2b2b2 ;
+$color_tamsesne : #a2a2a2 ;
+$color_tamsi : #a33222 ;
+$text_didelis : 24px;
+$text_paprastas: 16px;
+
+/* ============================================== */
+h1 {
+    color: $color_tamsi;
+}
+.aukstis-100 {
+    height: 100px;
+}
+.aukstis-200 {
+    height: 200px;
+}
+.aukstis-300 {
+    height: 300px;
+}
+.aukstis-500 {
+    height: 500px;
+}
+
+
+.alert{
+  :not(&) {
+    opacity: 0.8;
+  }
+}

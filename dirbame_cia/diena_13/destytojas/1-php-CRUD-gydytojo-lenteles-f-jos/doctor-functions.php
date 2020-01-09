@@ -8,9 +8,17 @@
     // 0 isjungta; 1- rodo pagrindiniai; 2- rodo visus pranesimus
     define( 'DEBUG_MODE',   '1' );
 
-function getPrisijungimas() {
-    // mysqli_connect( [$host, $user, $password, $database, $Mysql_port, $socket]);
     $prisijungimas =  mysqli_connect( DB_TIPAS, MYSQL_USER_VARDAS, MYSQL_USER_PASS, DB_PAVADINIMAS);
+    // 1) html/php faile nustatyt meta tag utf-8
+    // 2) DB-je nustatyti collation   UTF-8 general_ci arba unicode_ci
+    // 3) MYsql lietuviskos kalbos nustaytmas
+    mysqli_set_charset($prisijungimas, "UTF8"); // !!! UTF8 be jokio "-"
+
+function getPrisijungimas() {
+    // paskelbiu, kad noriu prieiti prie globaliaus kintamojo $prisijungimas
+    global $prisijungimas;
+
+    // mysqli_connect( [$host, $user, $password, $database, $Mysql_port, $socket]);
     if ($prisijungimas == false) {
             if (DEBUG_MODE > 0) {
                 echo "ERROR: nepavyko prisijungti prie DB !!!! <br>";
@@ -42,17 +50,38 @@ function getDoctor($nr) {
      // print_r($rezultataiArray);
      return $rezultataiArray;
 }
- $gydytojas1 = getDoctor(2);
- $gydytojas2 = getDoctor(4);
- $gydytojas3 = getDoctor(6);
+// testuojam
+ // $gydytojas1 = getDoctor(2);
+ // print_r($gydytojas1);
+ // echo "<hr>";
 
- print_r($gydytojas1);
- echo "<hr>";
- print_r($gydytojas2);
- echo "<hr>";
- print_r($gydytojas3);
- echo "<hr>";
+ // print_r($gydytojas1);
+ // echo "<hr>";
+ // print_r($gydytojas2);
+ // echo "<hr>";
+ // print_r($gydytojas3);
+ // echo "<hr>";
 
+// $nr - duomenu bazeje esancio gydytojo numeris
+function deleteDoctor($nr) {
+    $manoSQL = "DELETE FROM doctors WHERE id = '$nr'  LIMIT 1 ";
+    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($arPavyko == false &&  DEBUG_MODE > 0) {
+            echo "ERROR: nepavyko istrinti: $nr gydytojo DB-je !!!! <br>";
+     }
+}
 
-//
-//
+function updateDoctor($nr, $vard, $pavard) {
+    $manoSQL = "UPDATE  doctors
+                        SET
+                            name = '$vard',
+                            lname = '$pavard'
+                        WHERE id = '$nr'
+                        LIMIT 1
+                ";
+    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
+    if ($arPavyko == false &&  DEBUG_MODE > 0) {
+            echo "ERROR: nepavyko redaguoti: $nr gydytojo DB-je !!!! <br>";
+     }
+}
+// updateDoctor(2, "Karolis", "Karalaitis");

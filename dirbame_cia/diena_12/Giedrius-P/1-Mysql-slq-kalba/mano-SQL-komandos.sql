@@ -80,3 +80,12 @@ UPDATE patiens
 SELECT doctors.name from doctors
   INNER JOIN patiens
   ON patiens.doctor_id = doctors.id AND patiens.name = 'Mark';
+
+
+
+INSERT INTO doctors VALUES (Null, 'petras', 'petraitais');
+DELETE FROM doctors
+WHERE id = 5;
+UPDATE doctors
+  set name = 'Tim', lastname = 'Logan'
+  WHERE id = '1';
