@@ -14,12 +14,12 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Visi Gydytojai</h1>
+             <h1>Visi <?php echo $_GET['x']; ?></h1>
              <?php
              require_once('models/doctor-functions.php');
-             for ($i=0; $i < 10 ; $i++) {
-               $gydytojas = getDocter($i);?>
-               <a href='page-items.php?id=<?= $i ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
+             $visiGydytojai = getDoctors();
+             while($gydytojas = mysqli_fetch_assoc($visiGydytojai)) {?>
+               <a href='page-items.php?id=<?= $gydytojas['id'] ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
                <br>
              <?php } ?>
         </div>

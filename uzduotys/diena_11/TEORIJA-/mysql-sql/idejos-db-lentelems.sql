@@ -28,7 +28,7 @@ id    vardas   user_id   atsiliepimas/komentaras   ar_rodyti   data             
 
 ======= Prekes/ straisniai   ========
 id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kiekis
-1     Dviratis       Lorem....     659
+1     Dviratis        Lorem....     659
 2     Paspirtukas     Lorem....     49.99       5           99999
 3     Rieduciai       Lorem....     359         20          2
 
