@@ -55,19 +55,12 @@ function getDoctor($nr) {
  // print_r($gydytojas1);
  // echo "<hr>";
 
-function createDoctor($vard, $pavard) {
-    $manoSQL = "INSERT INTO doctors
-                       VALUES(NULL, '$vard', '$pavard')
-               ";
-    $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
-    if ($arPavyko == false &&  DEBUG_MODE > 0) {
-            echo "ERROR: nepavyko sukurti naujo gydytojo: $vard, $pavard DB-je !!!! <br>";
-            echo  mysqli_error(getPrisijungimas()); // neveikia, matyt nes naujas MYSQL serveris
-    }
-}
-// test
-// createDoctor('Petras', 'Uzurpatorius');
-// createDoctor('Antanas', 'Kalkinas');
+ // print_r($gydytojas1);
+ // echo "<hr>";
+ // print_r($gydytojas2);
+ // echo "<hr>";
+ // print_r($gydytojas3);
+ // echo "<hr>";
 
 // $nr - duomenu bazeje esancio gydytojo numeris
 function deleteDoctor($nr) {

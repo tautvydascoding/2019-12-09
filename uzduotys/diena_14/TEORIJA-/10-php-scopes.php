@@ -16,8 +16,10 @@ $a = 99; /* global scope    */
 
 function test()
 {
+
     echo $a; // error
     /* reference to local scope variable */
+
     // A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function
     // You can have local variables with the same name in different functions, because local variables are only recognized by the function in which they are declared.
 }

@@ -23,7 +23,10 @@
                   echo "<h2>" . $gyd['name'] . " " . $gyd['lname'] . "</h2>";
                 } elseif ($_GET['x'] == "patients") {
                   $pac = getPatient($_GET['id']);
-                  echo "<h2>" . $pac['name'] . " " . $pac['lname'] . " " . $pac['doctor_id'] . "</h2>";
+                  $priskirtasDaktaras = innerJoin($_GET['id']);
+                  echo "<h2>" . $pac['name'] . " " . $pac['lname'] . "</h2>";
+                  echo "<h6>Priskirtas daktaras: <a href='page-item.php?x=doctor&id=" . $priskirtasDaktaras['id'] . "'>" . $priskirtasDaktaras['name'] . " " . $priskirtasDaktaras['lname'] . "</a></h6><hr>";
+
                 }
               ?>
         </div>

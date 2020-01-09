@@ -1,1 +1,1 @@
-<h1> Mano puslapis su PHP</h1>
+<h1> Mano puslapis yra su PHP</h1>

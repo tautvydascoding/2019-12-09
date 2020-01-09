@@ -25,9 +25,9 @@
                     echo "<br>";
                   }
                 } elseif ($_GET['x'] == "patients") {
-                  for ($i=0; $i < 9; $i++) {
+                  for ($i=1; $i < 9; $i++) {
                     $pacientas = getPatient($i);
-                    echo "<a href='page-item.php?x=patients&id=$i'>" . $pacientas['name'] . " " . $pacientas['lname'] . " " . $pacientas['doctor_id'] . "</a>";
+                    echo "<a href='page-item.php?x=patients&id=$i'>" . $pacientas['name'] . " " . $pacientas['lname'] . "</a>";
                     echo "<br>";
                   }
                 }
