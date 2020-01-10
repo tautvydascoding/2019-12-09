@@ -32,6 +32,19 @@ id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kieki
 2     Paspirtukas     Lorem....     49.99       5           99999
 3     Rieduciai       Lorem....     359         20          2
 
+======= Prekes Kategorija  ========
+id    pavadinimas   aprasymas             pozicija
+1     Dviratis        Lorem....              2
+2     Paspirtukas     Lorem....             99999
+3     Rieduciai       Lorem....              2
+======= Prekes Kategorija tarpine lentele sujungia Kategorija ir preke(kad preke galetu tureti kelias kategorijas)  ========
+prekes_id    kategorijos_id
+1                 2
+1                 9
+2                 2
+3                 2
+3                 4
+
 ======= Paveiksliukai   ========
 id    pavadinimas   aprasymas              pozicija      prekes_id
 1     foto1.jpg         Lorem....                  3              1
@@ -46,3 +59,18 @@ id    pavadinimas               Turinys              pozicija           ar_rodyt
 1     pagrindine                   Lorem....                3            false
 2     velykine                     Lorem....                99999         false
 3    registraciju skatinimo        Lorem....                2             true
+
+======= Order  ========
+id    gavejoAdresas               gavejoMiestas       uzsakymoData
+1     Savanoriu pr. 202              Kaunas               2020-12-14
+2     Vytauto 12-43                   Vilnius              2020-12-16
+3     Tilto pr. 2                     Kaunas               2020-12-24
+
+======= Order Details ========
+=======(ka ir kiek pirko)======
+id   order_id    prekes_id    kiekis
+1       1           34          1
+2       1           8           4
+3       3           34          1
+4       4           2           2
+5       4           4           2
