@@ -34,9 +34,11 @@ id    pavadinimas   aprasymas      kaina    nuolaida  pozicija      data   kieki
 
 ======= Prekes Kategorija  ========
 id    pavadinimas   aprasymas             pozicija
-1     Dviratis        Lorem....              2
-2     Paspirtukas     Lorem....             99999
+1     Dviraciai       Lorem....              2
+2     Paspirtukai     Lorem....             99999
 3     Rieduciai       Lorem....              2
+4     Vaikams
+9     Akcijos         Lorem....              7
 ======= Prekes Kategorija tarpine lentele sujungia Kategorija ir preke(kad preke galetu tureti kelias kategorijas)  ========
 prekes_id    kategorijos_id
 1                 2
