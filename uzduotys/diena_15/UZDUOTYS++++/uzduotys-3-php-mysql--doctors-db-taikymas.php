@@ -1,4 +1,5 @@
 // uzduotis 2: atspausdinti gydytoja i <p> </p>, kurio 'id' yra 4
+// uzduotis istrinti 2 uzduoti
 // uzduotis 3.1: atspausdinti visas gydytoju pavardes , kaip list item "ul li"
 // uzduotis 3.2: patobulinti 'uzduotis3',
     kad paspaudus ant gydytojo pavardes   atidarytu doctor.php faila
