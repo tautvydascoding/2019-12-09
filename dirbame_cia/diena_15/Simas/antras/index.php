@@ -14,9 +14,19 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Poliklinika</h1>
-             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
+             <h1>Isijuk inspect->console</h1>
+             <?php
+                $metai = [1981, 1980, 1975, 1995, 1999];
+                for ($i=0; $i < count($metai) ; $i++) {
+                  print_r($metai[$i] . "<br>");
+                }
+                echo "<hr>";
+                foreach ($metai as $value) {
+                  echo "$value <br>";
+                }
+                echo "<hr>";
+                
+              ?>
         </div>
 
 

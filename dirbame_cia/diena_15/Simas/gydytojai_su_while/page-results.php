@@ -15,8 +15,13 @@
     <body>
         <div class="container  bg-light">
              <h1>Poliklinika</h1>
-             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
+             <?php
+                include('models/doctor-functions.php');
+                $nr = $_GET['id'];
+                $gydytojas = getDoctor($nr);
+                echo "<h4>$gydytojas[name] $gydytojas[lname] NR. $gydytojas[id]</h4>";
+              ?>
+
         </div>
 
 

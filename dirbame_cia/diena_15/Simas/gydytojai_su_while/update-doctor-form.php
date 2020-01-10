@@ -14,9 +14,23 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Poliklinika</h1>
-             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
+             <h1>Redagavimas</h1>
+             <form class="" action="update-doctor.php" method="get">
+               <?php
+                  $vardas = $_GET['vardas'];
+                  $pavarde = $_GET['pavarde'];
+                  $nr = $_GET['id'];
+                  echo "<h2>$vardas $pavarde</h2>";
+                  echo "<h4>Pakeiskite varda</h4>";
+                  echo "<input type='text' name='vardas' value='$vardas'><br>";
+                  echo "<h4>Pakeiskite pavarde</h4>";
+                  echo "<input type='text' name='pavarde' value='$pavarde'><br>";
+                  echo "<input type='hidden' name='id' value='$nr'>";
+                  echo "<input type='submit' name='' value='Pakeisti'>";
+                ?>
+             </form>
+
+
         </div>
 
 

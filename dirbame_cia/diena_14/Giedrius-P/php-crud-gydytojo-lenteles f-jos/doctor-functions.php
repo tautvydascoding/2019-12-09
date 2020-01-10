@@ -50,6 +50,8 @@ function getDocter($nr){
 // echo "<hr>";
 
 function createDoctor($vardas, $pav) {
+  $vardas = htmlspecialchars($vardas, ENT_QUOTES); // uzkuodojam Zenklus ("")
+  $pav = htmlspecialchars($pav, ENT_QUOTES); // -------//-----------
   $manoSQL = "INSERT INTO doctors
                   VALUES (NULL, '$vardas', '$pav')
              ";
@@ -75,6 +77,9 @@ function deleteDoctor($id){
 
 
 function updateDoctor ($id, $vardas, $pav){
+  $vardas = htmlspecialchars($vardas, ENT_QUOTES); // uzkuodojam Zenklus ("")
+  $pav = htmlspecialchars($pav, ENT_QUOTES); // -------//-----------
+  $id = htmlspecialchars($id, ENT_QUOTES); // -------//-----------
   $manoSQL = "UPDATE doctors
               SET name = '$vardas', lastname = '$pav'
               WHERE id = '$id'
@@ -91,3 +96,13 @@ function getDoctors($kiekis = 999999999){
 
     return $gygytojaiObj;
 }
+//  test
+ // $visiGydytojai = getDoctors();
+// print_r($visiGydytojai);
+
+
+
+// while ($gyd = mysqli_fetch_assoc($visiGydytojai)) {
+//   echo $gyd['name']."<br>";
+//   echo "{$gyd['name']} {$gyd['lastname']} <br>";
+// }

@@ -15,8 +15,12 @@
     <body>
         <div class="container  bg-light">
              <h1>Poliklinika</h1>
-             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
+             <?php
+             include('trinti-gydytoja.php');
+             ?>
+             <p>Daktaras istrintas</p>
+             <a href="index.php" class="btn btn-warning">Grizti</a>
+
         </div>
 
 
