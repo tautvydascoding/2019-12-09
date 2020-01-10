@@ -15,12 +15,12 @@
     <body>
         <div class="container  bg-light">
             <div class="card-body px-0">
-                  <form>
+                  <form action="email.php" method="post">
                       <div class="form-group">
-                          <input type="email" class="form-control pl-1" id="email" placeholder="Email" required>
+                          <input type="email" class="form-control pl-1" name="email" placeholder="Email" required>
                       </div>
                       <div class="form-group">
-                          <textarea class="form-control pl-1" id="message" placeholder="Your text"></textarea>
+                          <textarea class="form-control pl-1" name="message" placeholder="Your text"></textarea>
                       </div>
                       <button type="submit" class="btn btn-info float-right">SEND</button>
                   </form>
