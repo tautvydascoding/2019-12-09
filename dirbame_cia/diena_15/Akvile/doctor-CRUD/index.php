@@ -1,3 +1,5 @@
+
+        <?php include('form-modals/createNew-form.php'); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,20 +16,18 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
+            <div class="">
+                <h1 class="text-center">Poliklinika</h1>
+                <a href="allDoctors.php?x=gydytojai">Visi gydytojai</a>
+                <a href="page-results.php?x=pacientai">Visi pacientai</a>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration">
+              KURTI NAUJĄ GYDYTOJĄ
+            </button>
 
-<?php
-include('models/doctor-functions.php');
-$visiGydytojai = getDoctors();
-// print_r($visiGydytojai); // test
 
-$gydytojas = mysqli_fetch_assoc($visiGydytojai);
-while ($gydytojas == true) {
-    // print_r($gydytojas); // test
-    echo "<a href='doctor.php?aa=88'>   $gydytojas[name]   $gydytojas[lname]</a><br>";
-    $gydytojas = mysqli_fetch_assoc($visiGydytojai);
-}
- ?>
+
         </div>
 
 

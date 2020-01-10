@@ -2,7 +2,8 @@
 
 require_once('models/doctor-functions.php');
 
-$x = $_GET['numeris'];
+$x = $_GET['aa'];
+
 $gydytojas = getDoctor($x); // array - gydytrojo duomenis is DB
 
 // print_r($gydytojas); // test

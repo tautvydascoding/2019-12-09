@@ -14,20 +14,17 @@
     </head>
     <body>
         <div class="container  bg-light">
-             <h1>Isijuk inspect->console</h1>
-
-<?php
-include('models/doctor-functions.php');
-$visiGydytojai = getDoctors();
-// print_r($visiGydytojai); // test
-
-$gydytojas = mysqli_fetch_assoc($visiGydytojai);
-while ($gydytojas == true) {
-    // print_r($gydytojas); // test
-    echo "<a href='doctor.php?aa=88'>   $gydytojas[name]   $gydytojas[lname]</a><br>";
-    $gydytojas = mysqli_fetch_assoc($visiGydytojai);
-}
- ?>
+            <div class="card-body px-0">
+                  <form>
+                      <div class="form-group">
+                          <input type="email" class="form-control pl-1" id="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control pl-1" id="message" placeholder="Your text"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-info float-right">SEND</button>
+                  </form>
+              </div>
         </div>
 
 
