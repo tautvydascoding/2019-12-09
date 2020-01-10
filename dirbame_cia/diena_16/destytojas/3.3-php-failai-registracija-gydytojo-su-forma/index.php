@@ -17,8 +17,10 @@
              <h1>Isijuk inspect->console</h1>
 
 
-             <a class="btn bg-success"  href='controlers/naujasGydytojas.php?vardas=TOMAS&pavarde=TOMAUSKIS'> Naujas Gyd</a>
-             <a class="btn bg-danger" href='controlers/trintiGydytoja.php?nr=6'> Istrinti 6 gyd</a> 
+              <a class="btn bg-danger" href='controlers/trintiGydytoja.php?nr=5'> Istrinti 5 gyd</a>
+
+             <hr>
+             <a class="btn bg-success" href="view/registracija-gydytojo-form.php">  REGISTRACIJA  </a>
 
         </div>
 

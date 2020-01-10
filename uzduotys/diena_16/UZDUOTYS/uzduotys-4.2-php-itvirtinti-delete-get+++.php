@@ -1,5 +1,6 @@
 isvesti visus gydytojus
 
+index.php faile:
 1. paspaudus ant betkurio gydytojo vardo  - vartotoja perkelti i "doctor.php" faila
 (galite panaudoti "<a> </a>")
 
@@ -11,5 +12,6 @@ ir isvesti visa informacija tik apie sita gydytoja
 3.1 sukurti "trintiGydytoja.php", kuriame paleisti
 deleteDoctor(...) f-ja
 
+index.php faile:
 3.2 ideti "Salinti" mygtuka, kuris istrintu si gydytoja
 <a href=".../trintiGydytoja.php?x=....">Salinti</a>
