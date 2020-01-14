@@ -12,18 +12,22 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
 try {
     //Server settings
     // papildomi PhpMailer nustatymia, jeigu neveikia su standartiniais
+
+    //Custom connection options
+    //Note that these settings are INSECURE
     $mail->SMTPOptions = array(
-        'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-        )
+        'ssl' => [
+            'verify_peer' => true,
+            'verify_depth' => 3,
+            'allow_self_signed' => true,
+            'peer_name' => 'tls://smtp.gmail.com:587'
+        ],
     );
     $mail->Host = 'tls://smtp.gmail.com:587';
     $mail->SMTPSecure = 'ssl';                              // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                      // TCP port to connect to
     //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'testascoding@gmail.com';                 // SMTP username
