@@ -14,7 +14,7 @@ for (var i = 0; i < 100; i++) {
 }
 
 for (var i = 0; i < masyvas.length; i+=2) {
-  masyvas[i] = "lygisnis";
+  masyvas[i] = "lyginis";
 }
 console.log(masyvas);
 
