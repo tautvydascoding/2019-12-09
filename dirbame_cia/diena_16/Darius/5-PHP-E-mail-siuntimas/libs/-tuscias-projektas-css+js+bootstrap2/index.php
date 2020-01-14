@@ -13,13 +13,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
-<div class="">
-
-</div>
-
-
-
         <div class="container  bg-light">
              <h1>Isijuk inspect->console</h1>
 

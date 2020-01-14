@@ -117,15 +117,15 @@ function getDoctors($kiekis = 9999999) {
      return $rezultataiMysqlObjek;
 }
 // test
-$visiGydytojai = getDoctors(); // MYSQL objektas
-// print_r( $visiGydytojai ) ;
-
-//visu gydytoju isvedimas
-$gyd = mysqli_fetch_assoc($visiGydytojai); // is visu paimame viena
-while ($gyd) {  // false, 0, NULL, ''
-    echo "{$gyd['ID']}  {$gyd['name']}  {$gyd['lname']} <br>";
-    //echo "$gyd[name]  $gyd[lname] <br>";
-    //echo $gyd['name'] . " " . $gyd['lname'] . "<br>";
-    // is visu paimame sekanti gydytoja
-    $gyd = mysqli_fetch_assoc($visiGydytojai);
-}
+// $visiGydytojai = getDoctors(); // MYSQL objektas
+// // print_r( $visiGydytojai ) ;
+//
+// //visu gydytoju isvedimas
+// $gyd = mysqli_fetch_assoc($visiGydytojai); // is visu paimame viena
+// while ($gyd) {  // false, 0, NULL, ''
+//     echo "{$gyd['ID']}  {$gyd['name']}  {$gyd['lname']} <br>";
+//     //echo "$gyd[name]  $gyd[lname] <br>";
+//     //echo $gyd['name'] . " " . $gyd['lname'] . "<br>";
+//     // is visu paimame sekanti gydytoja
+//     $gyd = mysqli_fetch_assoc($visiGydytojai);
+// }

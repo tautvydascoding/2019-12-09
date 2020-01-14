@@ -35,8 +35,26 @@
         <div class="container  bg-light">
              <h1></h1>
 
-             <a href="controlers/printGydytojas.php">Registracija</a>
+             <!-- <a href="controlers/printGydytojas.php">Registracija</a> -->
+             <?php
 
+                include_once('models/doctor-functions.php');
+                // test
+                $visiGydytojai = getDoctors(); // MYSQL objektas
+                // // print_r( $visiGydytojai ) ;
+
+                //visu gydytoju isvedimas
+                $gyd = mysqli_fetch_assoc($visiGydytojai); // is visu paimame viena
+                while ($gyd) {  // false, 0, NULL, ''
+                    echo $gyd['name'] . " " . $gyd['lname'] ;
+                    ?>
+                    <a class="btn bg-danger" href='controlers/deleteGydytojas.php?nr=<?php echo $gyd['id']?>'> Istrinti</a> <br>
+
+                    <?php
+                    // is visu paimame sekanti gydytoja
+                    $gyd = mysqli_fetch_assoc($visiGydytojai);
+                }
+              ?>
         </div>
 
         <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>

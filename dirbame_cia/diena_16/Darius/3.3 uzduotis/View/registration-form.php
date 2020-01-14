@@ -27,7 +27,7 @@ registracija.php faile:
     <h1>Gydytoju registracijos forma</h1>
 
 <!-- <form class="" action="../controlers/naujasGydytojas.php" method="get"> -->
-<form class="" action="../controlers/deleteGydytojas.php" method="get">
+
 <!-- <input type="text" name="vardas" placeholder="jusu vardas">
 <input type="text" name="pavarde" placeholder="jusu pavarde">
 

@@ -68,6 +68,17 @@
     <body>
 
 
+
+
+<!-- // for ($i=0; $i < count($visiDarbuotojai[0]) ; $i++) {
+// print_r ($visiDarbuotojai[0][$i]);
+// }
+
+// for ($i=0; $i < count($visiDarbuotojai) ; $i++) {
+// print_r ($visiDarbuotojai[$i][0] . "<br>");
+// print_r ($visiDarbuotojai[$i][1] . "<br>");
+// print_r ($visiDarbuotojai[$i][2] . "<br>");
+// print_r ($visiDarbuotojai[$i][3] . "<br>"); -->
 <?php
 
 $darbuotojas1 = ["Jonas", "Jonaitis", 1980, "Inspektorius"];
@@ -76,28 +87,53 @@ $darbuotojas3 = ["Kestas", "Petraitis", 2001, "pavaduotojas"];
 
 $visiDarbuotojai = [$darbuotojas1, $darbuotojas2, $darbuotojas3];
 
-// for ($i=0; $i < count($visiDarbuotojai[0]) ; $i++) {
-// print_r ($visiDarbuotojai[0][$i]);
-// }
-
-// for ($i=0; $i < count($visiDarbuotojai) ; $i++) {
-// print_r ($visiDarbuotojai[$i][0] . "<br>");
-// print_r ($visiDarbuotojai[$i][1] . "<br>");
-// print_r ($visiDarbuotojai[$i][2] . "<br>");
-// print_r ($visiDarbuotojai[$i][3] . "<br>");
-
-
   for ($i=0; $i < count($visiDarbuotojai); $i++) {
+    for ($j=0; $j < count($visiDarbuotojai[$i]); $j++) {
 
-  for ($j=0; $j < count($visiDarbuotojai[$i]); $j++) {
-
-    print_r ("<li>".$visiDarbuotojai[$i][$j]);
+  //  print_r ("<li>".$visiDarbuotojai[$i][$j]);
 }
 }
 
 
 
  ?>
+
+  <!-- //  -PASIKARTOJIMAS PROGRAMAVIMO PAGRINDU TESTUI
+ // 1) sukurti masyva : Tomas, Jurgis, Petras, Angele, Paulius
+ // 1.1) atspausdinti masyva naudojant FOR cikla, While  cikla
+ // 1.4 Atspausdinti kas antra  (naudojant i+=2; )
+ // 1.4 Atspausdinti kas trecia
+ // 1.5 Atspasudinti viska nuo 2-cios (iskaitant 2-tra)
+ <! // 2) sukurti matrica:
+ // Dviratis, 199, 3vnt
+ // Paspirtukas, 100, 4vnt
+ // Riedlente, 49, 12vnt
+ // 2.0) atspausdinti su FOR ciklu
+ // 2.1) atspausdinti su FOR ciklu
+ // 2.2) atspausdinti su FOR FOR ciklu
+ // 2.3) atspausdinti su FOREACH -->
+
+
+ <?php
+
+$Preke1=["Dviratis", 199, "3vnt", "beginis"];
+$Preke2=["Paspirtukas", 100, "4vnt", "beginis"];
+$Preke3=["Riedlente", 49, "12vnt", "beginis"];
+
+$visos=[$Preke1, $Preke2, $Preke3];
+print_r ($visos);
+for ($i=0; $i < count($visos); $i++) {
+
+  for ($j=0; $j < count($visos[$i]); $j++) {
+    print_r("<li>".$visos[$i][$j]. "<br>");
+
+  }
+
+}
+
+
+
+  ?>
 
 
 
