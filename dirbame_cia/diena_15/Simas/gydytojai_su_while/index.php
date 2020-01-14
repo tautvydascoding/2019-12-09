@@ -22,30 +22,36 @@
                if (isset($_SESSION["message"])) {
                  echo "$_SESSION[message]";
                  unset($_SESSION["message"]);
+               } elseif (isset($_SESSION["naujoGydAlert"])) {
+                 echo "$_SESSION[naujoGydAlert]";
+                 unset($_SESSION["naujoGydAlert"]);
                }
                 require_once('models/doctor-functions.php');
                 $visiGyd = getDoctors(); //cia yra MySQL objektas
                 $gydytojas = mysqli_fetch_assoc($visiGyd);
                 while ($gydytojas) {
                   // <a href='delete-doctor.php?id=$gydytojas[id]' class='btn btn-danger delete'>Trinti</a>
-                  echo "<a href='page-results.php?id=$gydytojas[id]'> $gydytojas[name] $gydytojas[lname] </a>
 
-                  
-                  <button id='nr-$gydytojas[id]' class='delete btn-danger'>Trinti</button>
+                  echo "<div class='d-flex justify-content-between'><a href='page-results.php?id=$gydytojas[id]'> $gydytojas[name] $gydytojas[lname] </a>
 
 
-                  <a href='update-doctor-form.php?id=$gydytojas[id]&vardas=$gydytojas[name]&pavarde=$gydytojas[lname]' class='btn btn-success '>Redaguoti</a><br>";
+                  <button id='$gydytojas[id]' class='delete btn-danger'>Trinti</button>
+
+
+                  <a href='update-doctor-form.php?id=$gydytojas[id]&vardas=$gydytojas[name]&pavarde=$gydytojas[lname]' class='btn btn-success '>Redaguoti</a><br></div>";
                   $gydytojas = mysqli_fetch_assoc($visiGyd);
                 }
               ?>
-
-              <h4>Registracija</h4>
+              <a href="naujas-gydytojas-form.php" class="btn btn-info">Registruoti nauja gydytoja</a><br>
+              <!-- <h4>Registracija</h4>
               <form class="" action="registracija.php" method="get">
                 <input type="text" name="vardas" value="" placeholder="Vardas"><br>
                 <input type="text" name="pavarde" value="" placeholder="Pavarde"><br>
                 <input type="int" name="telefonas" value="" placeholder="Tel. nr."><br>
                 <input type="submit" name="" value="Registruotis">
-              </form>
+              </form> -->
+
+
               <!-- <h4>Gydytojo pasalinimas</h4>
               <form class="" action="trynimas.php" method="get">
                 <input type="int" name="id" value="" placeholder="Daktaro id">

@@ -8,4 +8,7 @@ require_once("Zmogus.php");
 $Monika = new Zmogus();
 // echo $Monika->ugis;   // ERROR  Cannot access private property
 // $Monika->ugis = 155;  // ERROR  Cannot access private property
+
+$Monika->setUgis(210);
+
 echo  $Monika->getUgis();

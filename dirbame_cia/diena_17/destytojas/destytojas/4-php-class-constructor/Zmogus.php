@@ -15,7 +15,7 @@ class Zmogus
 {
     private $ugis = 0;
     private $vardas = "bevardis";
-    public function __construct( $vardas, $ugis) {
+    public function __construct( $vardas='bevardis', $ugis='-999') {
         $this->ugis = $ugis;
         $this->vardas = $vardas;
     }
