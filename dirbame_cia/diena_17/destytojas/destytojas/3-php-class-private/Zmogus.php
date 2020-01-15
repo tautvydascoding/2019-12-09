@@ -15,6 +15,7 @@ class Zmogus
 {
     private $ugis = 0;
     private $vardas = "bevardis";
+
     public function getUgis() {
         return  $this->ugis;
     }

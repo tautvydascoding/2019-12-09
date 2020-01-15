@@ -1,7 +1,7 @@
 /<?php
 class Zmogus {
     public $ugis = 0;
-    private $pusryciai = '';
+    private $pusryciai = 'blynai';
     protected $turtas = 'namas';
 }
 
@@ -18,7 +18,7 @@ class Zmogus {
 // UZDUOTIS 2  (private-protected skirtumas)
 // Vyras klases viduje atspausdinti:
 // f-ja printVyroDuomenys()
-// ugi, pusrycius, turtas
+// ugi, pusrycius, turtas, testosterono
 // kur gausite klaida? Kurio kintamojo neiseina atspausdinti?
 
 // UZDUOTIS 3 (atspausdinti kintamaji, kurio neleido 2 uzdavinys)
