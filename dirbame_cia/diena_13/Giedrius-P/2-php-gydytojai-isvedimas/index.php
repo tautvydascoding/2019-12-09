@@ -15,8 +15,8 @@
     <body>
         <div class="container  bg-light">
              <h1>Poliklinika</h1>
-             <a href="page-results.php?x=gydytojai"> Visi Gydytojai</a>
-             <a href="page-results.php?x=pacientai"> Visi Pacientai</a>
+             <a href="page-results.php?x=Gydytojai"> Visi Gydytojai</a>
+             <a href="page-results.php?x=Pacientai"> Visi Pacientai</a>
         </div>
 
 
