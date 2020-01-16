@@ -22,30 +22,27 @@ if (isset( $_SESSION['massage'] ) )   {
     <body>
         <div class="container bg-light">
              <h1>Visi Gydytojai</h1>
-             <div class="row border p-2">
                  <?php
                  require_once('../models/doctor-functions.php');
                  $visiGydytojai = getDoctors();
                  while($gydytojas = mysqli_fetch_assoc($visiGydytojai)) {?>
-                   <div class="col-5">
-                     <label for=""><?php $i=1; $i++; ?></label>
-                     <a href='page-items.php?id=<?= $gydytojas['id'] ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
-                   </div>
-                   <div class="col-5">
-                     <a class="mt-2 mr-2 btn bg-warning" href="../models/deleteDoctor.php?id=<?= $gydytojas['id'] ?>">DELETE</a>
-                     <a class="mt-2 btn bg-success" href="editdoctor.php?id=<?= $gydytojas['id'] ?>">EDIT</a>
-                   </div>
-                   <hr>
+                <div class="trash row border p-2">
+                    <div class="col-5">
+                      <label for=""><?php $i=1; $i++; ?></label>
+                      <a href='page-items.php?id=<?= $gydytojas['id'] ?>'><?php echo $gydytojas['name']." ".$gydytojas['lastname']; ?></a>
+                    </div>
+                    <div class="col-5">
+                      <button class="mt-2 mr-2 btn bg-warning" id="delete" value="<?= $gydytojas['id'] ?>" onclick="trinti(<?= $gydytojas['id'] ?>)" href="#">DELETE</button>
+                      <a class="mt-2 btn bg-success" href="editdoctor.php?id=<?= $gydytojas['id'] ?>">EDIT</a>
+                    </div>
+                </div>
                  <?php } ?>
-           </div>
            <br>
              <div class="border p-2">
                <label for="">Sukurti nauja gydytoja:</label>
                <a class="btn border" href="newDoctor.php">New Doctor</a>
              </div>
         </div>
-
-
 
 
         <script type="text/javascript" src="../libs/jquery-3.4.1.min.js"> </script>
