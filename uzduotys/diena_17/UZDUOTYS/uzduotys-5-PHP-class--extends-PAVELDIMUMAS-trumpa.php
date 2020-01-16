@@ -1,13 +1,11 @@
-<?php
+/<?php
 class Zmogus {
     public $ugis = 0;
     private $pusryciai = 'blynai';
     protected $turtas = 'namas';
 }
-class Vyras  extends Zmogus {
-    private $testosteronas = 6122;
 
-}
+
 
 // UZDUOTIS 0.
 // susikurti objekta VYRAS
