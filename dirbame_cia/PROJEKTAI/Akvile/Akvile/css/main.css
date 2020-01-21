@@ -1,0 +1,301 @@
+html,
+body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+
+ul {
+    list-style: none; 
+
+}
+
+a {
+    color: #888;
+    font-size: 12px;
+}
+
+.dropdown.show {
+    display: inline-block
+}
+
+.dark-header {
+    
+    background-color: rgb(48,48,48);
+  
+}
+
+svg {
+    fill: white;
+}
+
+svg:hover {
+
+    fill: rgb(120,183,198);
+} 
+
+ul {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+
+.menu {
+
+    color: white;
+    align-self: center;
+}
+
+.menu:hover, a:hover {
+    color: rgb(120,183,198);
+    text-decoration: none;
+}
+
+.menu span {
+    font-size: 14px;
+}
+
+.categories {
+  position: relative;
+  padding-top: 2px;
+}
+
+.categories-list {
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.user_icon:hover, .user_icon svg:hover {
+  color: rgb(120,183,198)!important;
+}
+
+.user_icon svg{
+  fill: #888;
+
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.btn-link {
+  color: rgb(120,183,198);
+}
+
+.new-arrivals {
+    font-family: 'Oswald', sans-serif;
+}
+
+.new-arrivals h2{
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.new-arrivals p {
+    font-style: italic;
+    color:rgb(48,48,48);
+}
+
+footer ul {
+    display: block;
+}
+
+footer a {
+    font-size: 14px;
+}
+
+.footer-header {
+    border-left: 2px solid rgb(120,183,198);
+}
+
+.footer-header span {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    font-style: italic;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    font-style: italic;
+  }
+  
+  ::placeholder {
+    font-style: italic;
+  }
+
+  input[type="text"], textarea {
+
+    background-color : #d1d1d1; 
+  
+  }
+
+  .product-header {
+    border-left: 2px solid rgb(120,183,198);
+  }
+
+  .product-header h2 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .description {
+    color: #606060;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 27px;
+  }
+
+  .price {
+    color: rgb(120,183,198);
+    font-size: 22px;
+    font-weight: 700;
+    align-self: center;
+  }
+
+  .quantity {
+    width: 50px!important;
+    height: 50px;
+    text-align: center;
+  }
+
+  label[for=quantity] {
+    font-size: 14px;
+    margin: 0;
+
+  }
+
+  .add-to-cart {
+    height: 50px;
+  }
+
+  .line {
+    border-top: 2px solid rgb(235, 235, 235);;
+  }
+
+  .zoom-img:hover {
+ 
+    -webkit-box-shadow: 1px 1px 21px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 21px -11px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 21px -11px rgba(0,0,0,0.75);
+  }
+
+  .card-body h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+ 
+  }
+
+  .card-body span {
+    color: rgb(120,183,198);
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+ }
+
+  input[type="text"] {
+    background-color: white;
+  }
+
+  .card-body svg {
+      fill:rgb(120,183,198);
+  }
+
+  .card-body svg:hover {
+
+    transform: scale(1.2);
+} 
+
+.card-bg {
+  background-color: rgb(217, 243, 247);
+}
+
+.back-to-shop {
+  font-size: 14;
+  color: rgb(23,162,184);
+  font-family: 'Oswald', sans-serif;
+}
+
+.back-to-shop:hover {
+  font-size: 15;
+  color: rgb(189,157,135);
+}
+
+.cart-counter {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(21,150,170);
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right:-2;
+
+}
+
+.cart {
+  position: relative;
+  width: 25px;
+
+}
+
+.zoom-img {
+  position: relative;
+}
+
+.control-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.control-button {
+  background-color: rgba(219, 215, 210, 0.829);
+  border-radius: 3px;
+}
+
+.fa-trash {
+  color: rgb(192, 19, 19);
+}
+
+.fa-edit {
+  color: rgb(202, 131, 0);
+}
+
+.delete {
+
+  background: rgba(76, 175, 80, 0);
+  border: none;
+}
+
+ .fa-trash:hover, .fa-edit:hover {
+
+    transform: scale(1.2);
+} 
+
+span.input-group-text {
+  height: 35px;
+}
