@@ -18,7 +18,8 @@
 
 
              <a class="btn bg-success"  href='controlers/naujasGydytojas.php?vardas=TOMAS&pavarde=TOMAUSKIS'> Naujas Gyd</a>
-             <a class="btn bg-danger" href='controlers/trintiGydytoja.php?nr=6'> Istrinti 6 gyd</a> 
+             <a class="btn bg-danger" href='controlers/trintiGydytoja.php?nr=6'> Istrinti 6 gyd</a>
+
 
         </div>
 
