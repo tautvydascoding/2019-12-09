@@ -23,17 +23,17 @@ try {
             'peer_name' => 'tls://smtp.gmail.com:587'
         ],
     );
-    $mail->Host = 'tls://smtp.gmail.com:587';
+    $mail->Host = 'smtp.mail.yahoo.com:465';
     $mail->SMTPSecure = 'ssl';                              // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                      // TCP port to connect to
     //Server settings
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'testascoding@gmail.com';                 // SMTP username
-    $mail->Password = 'slaptazodis';                          // SMTP username
+    $mail->Username = 'darlau8@yahoo.com';                 // SMTP username
+    $mail->Password = 'Snietala78';                          // SMTP username
     //Recipients
-    $mail->setFrom( 'testascoding@gmail.com' ,  $klientoVardas);
+    $mail->setFrom( 'darlau8@yahoo.com' ,  $klientoVardas);
     $mail->addReplyTo( $klientoPastas, $klientoVardas);     // Add a recipient
     $mail->addAddress( 'testascoding@gmail.com', 'Puslapiu kurejai');
     //Content

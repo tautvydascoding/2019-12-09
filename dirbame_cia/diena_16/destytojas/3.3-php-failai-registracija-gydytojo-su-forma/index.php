@@ -17,6 +17,14 @@
              <h1>Isijuk inspect->console</h1>
 
 
+             <div class="row bg-dark" >
+               <div class="isv col-12">
+                 <div class="isvedimas">
+                 <button class="btn-primary  btn xs" type="submit" name="prekes">   Išvesti prekes  </button> <br>
+                 </div>
+               </div>
+             </div>
+
               <a class="btn bg-danger" href='controlers/trintiGydytoja.php?nr=5'> Istrinti 5 gyd</a>
 
              <hr>

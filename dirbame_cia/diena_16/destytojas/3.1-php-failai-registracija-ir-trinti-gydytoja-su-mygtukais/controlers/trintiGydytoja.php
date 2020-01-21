@@ -10,5 +10,5 @@ deleteDoctor($x);
 
 echo "pavyko istrinti  gydytoja $x<br>";
 
-// 2.3. Narsykleje nueiti:
-//    localhost/ ... /trintiGydytoja.php
+?>
+<a class="btn bg-danger" href='..'> Istrinti 6 gyd</a>
