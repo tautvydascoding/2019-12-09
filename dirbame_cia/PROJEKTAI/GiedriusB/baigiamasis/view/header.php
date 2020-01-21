@@ -1,6 +1,7 @@
 <?php
-// include()
 session_start();
+// include()
+// session_destroy();
  ?>
 <!DOCTYPE html>
 <html>

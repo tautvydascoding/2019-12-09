@@ -1,9 +1,9 @@
 <?php
-    session_start();
+    // session_start();
     include('header.php');
     include('../controler/preke-functions.php');
     include('../controler/searchControler.php');
-    $query = $_POST['query'];
+    // $query = $_POST['query'];
     //
     // ini_set('display_errors', 1);
     // ini_set('display_startup_errors', 1);

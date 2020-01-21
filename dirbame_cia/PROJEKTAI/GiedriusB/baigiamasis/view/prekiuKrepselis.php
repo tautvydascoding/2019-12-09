@@ -1,14 +1,15 @@
 <?php
-      session_start();
+
+      // session_start();
       include('header.php');
       include('../controler/prisijungimas.php');
       include('../controler/preke-functions.php');
       include('../controler/img-functions.php');
 
-      $prekesSes = $_SESSION['vezimelis'];
       if(isset($_SESSION['vezimelis'])){
         $kiekis = 0;
         $suma = 0;
+        $prekesSes = $_SESSION['vezimelis'];
 
 ?>
 
