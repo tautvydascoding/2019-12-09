@@ -28,8 +28,8 @@ INSERT INTO doctors VALUES (NULL, 'Koris', 'Pitas');
 
 CREATE TABLE patiens (
   id       int AUTO_INCREMENT PRIMARY KEY,
-  name     VARCHAR(40),
-  lastname VARCHAR(40),
+  name     VARCHAR(250),
+  lastname VARCHAR(250),
   doctor_id int FOREIGN KEY
 );
 
