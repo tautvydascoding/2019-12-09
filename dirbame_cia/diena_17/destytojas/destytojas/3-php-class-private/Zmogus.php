@@ -18,6 +18,7 @@ class Zmogus
 
     public function getUgis() {
         return  $this->ugis;
+
     }
     public function setUgis($x) {
            $this->ugis = $x;

@@ -1,0 +1,27 @@
+header {
+    height: 100px;
+}
+
+nav, footer {
+    height: 50px;
+}
+
+main div {
+    height: 250px;
+}
+
+.vienas {
+    height: 150px;
+}
+
+.trys {
+    height: 200px;
+}
+
+.col-double {
+    height:190px;
+}
+
+.sestas {
+    height: 50px;
+}

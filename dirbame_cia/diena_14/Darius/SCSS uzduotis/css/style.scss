@@ -1,0 +1,34 @@
+// 3. SCSS faile:
+// 3.1 div antrastes tekstui uzdeti:
+//      teksto spalva : raudona
+//      teksto dydis: 29px
+//      teksto svoris: 600
+// 3.2 div paragrafo tekstui uzdeti:
+//      teksto dydis: 16px
+//      teksto svoris: 100
+// 4.1 aside antrastes tekstui uzdeti:
+//      teksto spalva : melyna
+//      teksto dydis: 29px
+//      teksto svoris: 100
+// 4.2 aside paragrafo tekstui uzdeti:
+//      teksto dydis: 16px
+//      teksto svoris: 600 -->
+
+$text-color-r : red;
+$text-color-b : blue;
+$text-size-l : 29px;
+$text-weight-b : 1600;
+$text-size-s : 16px;
+$text-weight-s : 100;
+
+div h1 {
+
+font: {
+  color: $text-color-r;
+  size: $text-size-l;
+weight: $text-weight-b;
+
+
+}
+
+}
