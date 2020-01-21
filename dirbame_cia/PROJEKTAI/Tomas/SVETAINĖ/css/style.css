@@ -1,0 +1,431 @@
+body { margin: 0; padding: 0; }
+
+/* HEADER */
+
+header {
+  font-family: 'Questrial', sans-serif;
+  float: left;
+  width: 100%;
+  margin-top: -60px;;
+  position: fixed;
+  z-index: 2;
+}
+
+/* NAVIGATION */
+
+nav { float: left; width: 100%; background: black; }
+
+nav .ul-header { float: right; color: black; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: black;
+  position: relative;
+}
+
+/* LOGO */
+.logo {
+  float: left;
+  padding-left: 100px;
+  background-color: black;
+  height: 60px;
+  width: 100px;
+}
+
+.logo .a-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  font-size: 20px;
+  color: #FFA500;
+}
+
+.logo a:hover { text-decoration: none; }
+
+/* ====LOGO END==== */
+
+.ul-header .home { cursor: pointer; }
+
+.ul-header li { display: inline-block; }
+
+.ul-header li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.ul-header li:hover { background: #FFA500; }
+
+.ul-header .button-li-nav:hover { background: black; }
+
+.ul-header ul {
+  position: absolute;
+  min-width: 200px;
+  background-color: lightgrey;
+  display: none; /*paslepiu drop downus*/
+}
+
+/* ===NAVIGATION LOGIN BOTTON=== */
+
+#button-nav button {
+  width: 70px;
+  border-radius: 4px;
+  border-color: #FFA500;
+  border-bottom-color: #FFC757;
+  border-right-color: #FFC757;
+  background-color: #FFA500;
+  color: white;
+}
+
+/* ===NAVIGATION LOGIN BUTTON END=== */
+
+/* DROP-DOWN */
+.ul-header ul li {
+  display: block;
+  background: #1F1F1F;
+  cursor: pointer;
+}
+
+.ul-header li:hover ul { display: block; }
+
+.ul-header li .train-prog, .about, .language {
+  color: white;
+  float: right;
+  padding-left: 10px;
+}
+
+/* ===DROP-DOWN  END=== */
+
+/* TOGGLE MENU */
+.toggle-menu {
+  width: 100%;
+  height: 60px;
+  background: black;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0.8em;
+  display: none;
+}
+
+nav .toggle-menu i { float: right; }
+
+/* ===TOGGLE MENU END=== */
+
+/* === NAVIGATION END=== */
+
+
+/* RESPONSIVE */
+
+@media(max-width: 965px) { nav .toggle-menu { display: block; }
+
+  .ul-header {
+    display: none;
+    position: static;
+    background: #1F1F1F;
+    float: left;
+    width: 100%;
+  }
+
+  .ul-header li { display: block; }
+
+  .ul-header ul { position: static; background: orange; }
+}
+
+/*================HEADER END========================== */
+
+
+/* CAROUSEL START */
+
+.carousel { z-index: 1; margin-top: 60px; padding: 0; }
+
+.p-main-1 { color: white; }
+
+.p-main-2 { color: #FFA500; }
+
+.p-main-1 { margin-bottom: 5px; font-size: 20px; }
+
+.p-main-2 { margin-bottom: 20px; font-size: 30px; }
+
+.carousel-button { margin-bottom: 70px; }
+
+.carousel-button a button {
+  border-radius: 3px;
+  width: 180px;
+  background: #FFA500;
+  border: 1px solid #FFA500;
+  color: white;
+  transition: 0.6s;
+  overflow: hidden;
+}
+
+.carousel-button a button:focus { outline: none; }
+
+.carousel-button a button:before { content: ''; }
+
+.carousel-button a button:hover { background: #FFA500; width: 200px;}
+
+@media(max-width: 773px) {
+  .p-main-1 { margin-bottom: 5px; font-size: 17px;}
+
+  .p-main-2 { margin-bottom: 22px; font-size: 25px; }
+
+  .carousel-button { margin-bottom: 30px; }
+
+  .carousel-button a button { width: 155px; }
+
+  .carousel-button a button:hover { width: 170px;}
+
+}
+
+@media(max-width: 639px) {
+  .p-main-1 { margin-bottom: 5px; font-size: 13px; }
+
+  .p-main-2 { margin-bottom: 17px; font-size: 18px; }
+
+  .carousel-button { margin-bottom: 20px; }
+
+  .carousel-button a button { width: 140px; }
+
+  .carousel-button a button:hover { width: 155px;}
+}
+
+@media(max-width: 459px) {
+    .p-main-1 { display: none; }
+
+    .carousel-button { margin-bottom: 15px; }
+}
+
+@media(max-width: 417px) {
+  .p-main-2 { margin-bottom: 10px; font-size: 14px; }
+
+  .carousel-button a button { width: 100px; }
+
+  .carousel-button { margin-bottom: 10px; }
+}
+
+/* ==========CAROUSEL END ========================== */
+
+
+
+/* START FOOTER */
+
+footer {
+  float: left;
+  width: 100%;
+  background-color: #212121;
+  border-top: 2px solid #FFA500;
+}
+
+.sportprog-footer, .contact-footer, .about-footer { margin: 20px 1.6%; }
+
+footer .footer-ul { width: 200px; background-color: #212121; }
+
+/* SPORTprograms */
+.sportprog-footer { float: left; width: 30%; }
+
+.sportprog-footer div, a p{
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFA500;
+}
+
+.sportprog-footer a:hover { text-decoration: none; }
+
+.sportprog-footer .footer-ul { width: 100px; }
+
+.sportprog-footer .footer-ul li a { color: white; }
+
+
+/* ABOUT */
+
+.about-footer { float: left; width: 30%; }
+
+.about-footer .h5-about { color: white; margin-bottom: 16px; }
+
+.about-footer .h5-about, .div-about{
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-footer .footer-ul { width: 70px; }
+
+.about-footer .footer-ul li a { color: white; }
+
+.about-footer .footer-ul li a:hover { text-decoration: none; }
+
+
+/* CONTACT */
+
+.contact-footer { float: left; width: 30%; }
+
+.contact-footer .h5-contact {
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 19px;
+  color: white;
+}
+
+.form-contact button {
+  background: #FFA500;
+  border-radius: 4px;
+  border: none;
+}
+
+.contact-footer .phone-mail .footer-ul li i { color: white; }
+
+.contact-footer .phone-mail .footer-ul li { color: white; }
+
+.contact-footer .social-media a i { color: #FFA500; }
+
+.contact-footer .social-media a i:hover { color: white; }
+
+
+.contact-footer .form-contact, .phone-mail {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-footer .footer-ul { width: 180px; margin-left: auto; margin-right: auto; }
+
+.contact-footer .social-media {
+  font-size: 25px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .p-footer { color: white; margin-left: 20px; }
+
+@media(max-width: 633px) {
+ .sportprog-footer { width: 46%; }
+
+  .about-footer { width: 46%;}
+
+  .contact-footer {width: 97%;}
+}
+
+/* =====FOOTER END===== */
+
+
+/* =========START FREQUENTLY ASKED QUESTIONS======== */
+
+.faq h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 60px; /* sutvarko navigacija */
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.faq .row { z-index: 0; margin-left: auto; margin-right: auto; }
+
+.faq .card, .card-header { border: none; margin: 0; margin-bottom: 10px; }
+
+.faq .card { box-shadow: 0 2px 25px 0 rgba(110,130,208, .18); }
+
+.btn-link {
+  width: 100%;
+  /* height: 60px; */
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+}
+
+.btn-link:hover { text-decoration: none; }
+
+.card-body { background: #e8eeff; }
+
+/* =========END FREQUENTLY ASKED QUESTIONS======== */
+
+/* ================WHY US============== */
+
+.whyUs h2 { text-align: center; margin: 30px; font-size: 30px; }
+
+.whyUs p { text-align: justify; }
+
+html { scroll-behavior: smooth; }
+
+/* ===============WHY US END================ */
+
+/* ============START QUESTIONNAIRE========== */
+
+.questionnaire { margin-top: 60px; }
+
+.questionnaire h1 { margin: 40px; text-align: center; }
+
+/* ============END QUESTIONNAIRE========== */
+
+/* =========== START ADMIN LOGIN========== */
+
+.adminLogin { margin-top: 60px; height: 397px; }
+
+.adminLogin div { width: 270px; margin-left: auto; margin-right: auto; }
+
+.adminLogin div h3 {
+  color: orange;
+  padding-top: 30px;
+  width: 190px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.adminLogin div form { margin-top: 30px; }
+
+.adminLogin div form .orange1, .orange2 { color: orange; background-color: black; border: none; }
+
+.adminLogin div form .orange1 { margin-left: 150px; }
+
+.adminLogin  form .pass { margin: 5px 0 5px 13px; }
+
+/* =========== END ADMIN LOGIN========== */
+
+/* =========== START page-ADMIN controls========== */
+
+.adminControls { margin-top: 60px; height: 397px; }
+
+.adminControls h3 { color: orange; padding-top: 20px; }
+
+.adminControls div { width: 100px; display: block; }
+
+.adminControls button {
+  width: 100px;
+  margin: 10px 0;
+  color: orange;
+  background-color: black;
+  border: none;
+}
+
+/* =========== END page-ADMIN controls========== */
+
+/* =======PAGE ADMIN QUSTIONS========= */
+.admin-h3 {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: orange;
+}
+
+.page-admin-questions { background-color: #FFF2E8; border-radius: 20px; }
+
+.admin-questions { margin-top: 60px; }
+
+.page-admin-questions .a-1 { margin-left: 20px; }
+
+/* =======END PAGE ADMIN QUSTIONS========= */
+
+/* ==========START PAGE ADMIN PROGRAMS======== */
+
+.adminPrograms {
+  margin-top: 60px;
+}
+
+/* ==========END PAGE ADMIN PROGRAMS======== */
