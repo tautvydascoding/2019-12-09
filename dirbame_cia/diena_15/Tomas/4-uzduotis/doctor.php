@@ -28,7 +28,7 @@
           // 3.1 istaisyti klaida: function 'getDoctors' not found
           // 3.1.1 isideti i projekta - faila: db_functions.php
           // 3.1.2  i  faila  doctor.php parasyti:
-          // include('db_functions.php');
+          include('db_functions.php');
 
           // 3.1.3 Narsykles adreso ivedimo lange (paciam gale) prirasyti :
               // doctor.php?nr=4

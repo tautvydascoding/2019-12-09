@@ -32,7 +32,8 @@
 
       $gydytojas = mysqli_fetch_assoc($visiGydytojai);
       while($gydytojas == true) {
-          echo "<ul><li><a href='doctor.php?id=$gydytojas[id]'>" . $gydytojas['lname'] . "</a></li></ul>";
+        // print_r($gydytojas);
+          echo "<ul><li><a href='doctor.php?numeris=$gydytojas[id]'>" . $gydytojas['lname'] . "</a></li></ul>";
           $gydytojas = mysqli_fetch_assoc($visiGydytojai);
       }
       ?>

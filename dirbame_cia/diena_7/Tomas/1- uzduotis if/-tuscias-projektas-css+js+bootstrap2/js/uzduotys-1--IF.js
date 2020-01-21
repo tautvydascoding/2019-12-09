@@ -191,3 +191,49 @@ if( klientoTipas == "bronze" ) {
 } else if( klientoTipas == "bronze", "silver", "gold") {
 	console.log("bet koks kitas tipas ", "5% nuolaida");
 }
+//eglute
+var text = "";
+for(i = 0; i < 10; i++) {
+	text += "#";
+	document.write(text + "<br>");
+}
+
+// var amzius = 10;
+// while(amzius < 10) {
+// 	console.log("Tavo amzius yra mazesnis uz 10");
+// 	amzius++;
+// }
+// document.write("dabar tau yra 10");
+
+// ---- -PASIKARTOJIMAS PROGRAMAVIMO PAGRINDU TESTUI-----
+// 1) sukurti masyva : 1981, 1980, 1975, 1995, 1999
+var metai = [1981, 1980, 1975, 1995, 1999];
+
+// 1.1) atspausdinti masyva naudojant FOR cikla, While cikla ir FOREACH cikla
+var text = "";
+var i;
+for(i = 0; i < metai.length; i++) {
+  text += metai[i] + "<br>";
+}
+document.write(text);
+
+while (metai[i]) {
+  text += metai[i] + "<br>";
+  i++;
+}
+document.write(text);
+
+// 1.4 Atspausdinti kas antra data
+
+
+// 1.4 Atspausdinti kas trecia data
+// 1.5 Atspasudinti visas datas nuo 3-cios (iskaitant 3-cia)
+
+
+// 2) sukurti matrica:
+// Tomas, 1981, Buhalteris
+// Ona 1980 Programuotoja
+// Petras, 1975, Direktorius
+// 2.1) atspausdinti su FOR ciklu
+// 2.2) atspausdinti su FOR FOR ciklu
+// 2.3) atspausdinti su FOREACH

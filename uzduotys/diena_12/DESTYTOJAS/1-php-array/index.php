@@ -126,7 +126,7 @@
             // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
 
 
-             
+
 
          ?>
 

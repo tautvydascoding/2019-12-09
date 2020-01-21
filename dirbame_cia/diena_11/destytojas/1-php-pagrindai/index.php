@@ -19,7 +19,7 @@
              <?php
               echo "naujas tekstas <br>";
               echo "naujas tekstas <br>";
-              echo "<div>     naujas tekstas  </div> ";
+              echo "<div>  naujas tekstas  </div> ";
               echo "<div>
                         naujas tekstas
                     </div> ";
