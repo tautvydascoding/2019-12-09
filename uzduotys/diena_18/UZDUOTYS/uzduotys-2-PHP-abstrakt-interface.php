@@ -7,7 +7,7 @@
         // isLogin()
         // NOTE: Ar interface gali tureti kintamuosius????
     // 2) sukurti (abstrakcia) klase "User" :
-        // 0) abstrakti kalse - NEGALI TURETI ABSTRAKCIU KINTAMUJU (BET PAPRASTUS GALI)
+        // 0) abstrakti klase - NEGALI TURETI ABSTRAKCIU KINTAMUJU (BET PAPRASTUS GALI)
         // A) sukurti kintamuosius:
             // name, password , createdDate, lastLogin
         // B) abstrakti funkcija "Loguot()"

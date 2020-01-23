@@ -1,4 +1,4 @@
 // test
-console.log("labas");
+//console.log("labas");
 // alert("issokanti zinute");
-document.write("labas ekrane");
+//document.write("labas ekrane");

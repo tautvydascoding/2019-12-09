@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +19,10 @@
 
              <h2>Visi gydytojai</h2>
 
+            
              <?php
+
+
                  require_once('models/doctor-functions.php');
 
                  $visiGyd = getDoctors(); //    MYSQL objektas
@@ -34,7 +38,7 @@
 
               ?>
 
- 
+
         </div>
 
 

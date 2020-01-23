@@ -21,8 +21,8 @@
           echo $x; -->
 
           <?php
-              // $x = $_GET["tekstas"];
-              $x = $_GET["labas"];
+              $x = $_GET["tekstas"];
+            //  $x = $_GET["labas"];
               echo $x;
            ?>
 

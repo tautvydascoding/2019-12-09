@@ -1,0 +1,43 @@
+
+.header{
+height: 70px;
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+}
+
+.menu{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 30px;
+}
+
+
+.post{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 250px;
+}
+
+.aside{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 170px;
+}
+
+.aside-bigger{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 200px;
+}
+
+.tiny{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 100px;
+}
+
+.last{
+  background-color: rgb(117, 115, 117);
+  border: 1px solid rgb(20, 20, 20);
+  height: 75px;
+}

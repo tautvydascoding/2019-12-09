@@ -4,6 +4,7 @@
 
 //get data passed to from main.js script
 $username =  $_POST["name"];
+$username =  $_POST["location"];
 // su apsauga nuo hackinimo:
 $username = htmlspecialchars(strip_tags($_POST["name"]), ENT_QUOTES);
 
@@ -12,6 +13,6 @@ $username = htmlspecialchars(strip_tags($_POST["name"]), ENT_QUOTES);
 echo "vardas: " . $username  ;
 //    OR
 //============ return json objekta=================
-// $x = $_POST["name"];
-// $manoAray = ['vardas' => $x  ];
-// echo json_encode( $manoAray );
+$x = $_POST["name"];
+$manoAray = ['vardas' => $x  ];
+echo json_encode( $manoAray );

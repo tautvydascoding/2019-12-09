@@ -1,4 +1,4 @@
-// uzduotis:   panaudoti SASS arba SCCS
+<!-- // uzduotis:   panaudoti SASS arba SCCS
 
 
 // UZDUOTIS
@@ -23,4 +23,4 @@
 //      teksto svoris: 100
 // 4.2 aside paragrafo tekstui uzdeti:
 //      teksto dydis: 16px
-//      teksto svoris: 600
+//      teksto svoris: 600 -->

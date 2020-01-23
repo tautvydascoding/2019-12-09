@@ -19,7 +19,7 @@
       // 1. sukurti tuscia porjekta (default)
 
       // 2. doctor.php faile parasyti PHP koda:
-          $numeris = 4;
+          $numeris = 19;
           $gydytojas = getDoctor($numeris);
           // echo $gydytojas[0] . $gydytojas[0];
           // vienas is butu neveiks
