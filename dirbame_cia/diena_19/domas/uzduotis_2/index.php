@@ -12,7 +12,7 @@
             // name, password , createdDate, lastLogin
         // B) abstrakti funkcija "Loguot()"
         // C) NE abstrakti funkcija clearlastLoginTime()
-    // 3) sukurti klase Admin :
+    // 3) sukurti klase Admin:
         // A)  kuri panaudoja Edit ir User ~klases (implementuoti ir paveldeti)
     // 4)
          // A) issivesti username,
@@ -23,4 +23,27 @@
      // NOTE: abstrakti klase - NEGALI TURETI ABSTRAKCIU KINTAMUJU (BET PAPRASTUS GALI)
 
 
-  
+interface edit(){
+
+function changeName($a);
+function getName();
+function isLogin();
+
+
+
+}
+abstract class user(){
+
+
+
+$name = "";
+$password = "";
+$createDate = "";
+$lastLogin = "";
+
+abstract function Logout(); //implementuoti
+function clearlastLoginTime();
+
+
+
+}

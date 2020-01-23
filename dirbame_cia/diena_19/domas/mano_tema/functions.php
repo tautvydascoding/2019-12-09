@@ -1,0 +1,3 @@
+<?php
+
+// mano php komandos

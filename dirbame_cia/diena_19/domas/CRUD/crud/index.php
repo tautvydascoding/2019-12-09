@@ -14,36 +14,17 @@
     </head>
     <body>
         <div class="container  bg-light">
-            <h1 class="bg-info">Mokaus CSS</h1>
-<script>
-
-function getName(x){
-  return x;
-}
-function getvardaspavarde(){
-
-  return getName() + getPavarde();
-}
-
-function getPavarde(y){
-
-  return y;
-}
-
-console.log(getvardaspavarde);
-
-
-</script>
-
-}
-
+             <h1>Isijuk inspect->console</h1>
 
         </div>
 
 
 
 
+        <script type="text/javascript" src="libs/jquery-3.4.1.min.js"> </script>
+        <script type="text/javascript" src="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
         <!-- MANO JS pats zemiausias -->
-        <script type="text/javascript" scr="libs/bootstrap/js/bootstrap.bundle.min.js"> </script>
-    </body>
+        <script type="text/javascript" src="js/main.js"></script>
+
+     </body>
 </html>

@@ -52,23 +52,26 @@ $prekes = array (
 
   array ("dviratis", "199", "3vnt"),
   array ("paspirtukas","100","4vnt"),
+  array("riedlentes","49","12vnt"),
   array("riedlentes","49","12vnt")
 
 );
 
+
+//eis stulpeliu per
 for($i=0; $i<sizeof($prekes);$i++){
 
 
-
-//echo "hi";
-for($a=0; $a<sizeof($prekes[0][$a]);$a++){
-
-
-echo $prekes[$i][$a];
+  //echo "hi";
+  // begs per eilute
+  for($a=0; $a<sizeof($prekes[$i]);$a++){
 
 
-}
-//echo "hi";
+  echo $prekes[$i][$a]. "<br>";
+
+
+  }
+  //echo "hi";
 
 
 }
